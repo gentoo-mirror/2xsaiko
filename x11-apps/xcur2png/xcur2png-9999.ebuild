@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://github.com/eworm-de/xcur2png"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE=""
 
 DEPEND="x11-libs/libXcursor media-libs/libpng:*"
