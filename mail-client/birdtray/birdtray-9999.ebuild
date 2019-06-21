@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://github.com/gyunaev/birdtray"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 DEPEND="dev-qt/qtx11extras:5
