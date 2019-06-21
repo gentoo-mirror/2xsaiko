@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://github.com/therealfarfetchd/obs-glcapture"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="-* ~amd64"
+KEYWORDS=""
 IUSE=""
 
 DEPEND="media-video/obs-studio"
