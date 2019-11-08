@@ -11,7 +11,7 @@ SRC_URI="https://github.com/n4n0GH/breezeway-mod/archive/v${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE=""
 
 DEPEND=""
