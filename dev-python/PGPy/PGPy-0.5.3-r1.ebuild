@@ -14,8 +14,9 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND=""
-RDEPEND="${DEPEND}
+DEPEND="
+	dev-python/wheel"
+RDEPEND="
 	dev-python/cryptography
 	dev-python/pyasn1
 	dev-python/six"
