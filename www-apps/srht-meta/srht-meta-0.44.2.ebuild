@@ -51,7 +51,7 @@ src_install() {
 }
 
 pkg_preinst() {
-	if has_version "${PN}"; then
+	if has_version "${CATEGORY}/${PN}"; then
 		OLD_SRHT_VERSION=1
 	fi
 }
