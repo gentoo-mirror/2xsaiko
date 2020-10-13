@@ -38,7 +38,6 @@ SRHT_NODE_DEPS="
 SRC_URI="
 	https://git.sr.ht/~sircmpwn/${MY_PN}/archive/${PV}.tar.gz -> ${MY_P}.tar.gz
 	https://github.com/twbs/bootstrap/archive/v${BOOTSTRAP_V}.tar.gz -> bootstrap-v${BOOTSTRAP_V}.tar.gz
-	https://github.com/sass/node-sass/releases/download/v4.14.1/linux-x64-83_binding.node
 	${SRHT_NODE_DEPS}
 "
 
@@ -53,8 +52,6 @@ BDEPEND=""
 
 S="${WORKDIR}/${MY_P}"
 
-DISTUTILS_IN_SOURCE_BUILD=1
-
 export PKGVER="${PV}"
 
 PATCHES=(
@@ -67,10 +64,6 @@ src_unpack() {
 	unpack "bootstrap-v${BOOTSTRAP_V}.tar.gz"
 
 	_install_node_deps "${S}/srht" "${SRHT_NODE_DEPS}"
-
-	mkdir -p "node_modules/node-sass/vendor/linux-x64-83"
-	cp "${DISTDIR}/linux-x64-83_binding.node" "node_modules/node-sass/vendor/linux-x64-83/binding.node"
-	chmod +x "node_modules/node-sass/vendor/linux-x64-83/binding.node"
 }
 
 python_prepare_all() {
