@@ -46,8 +46,22 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="net-libs/nodejs[npm]"
-RDEPEND=""
+DEPEND="
+	net-libs/nodejs[npm]
+	dev-python/alembic
+	dev-python/beautifulsoup:4
+	dev-python/bleach
+	dev-python/celery
+	dev-python/cryptography
+	dev-python/flask
+	dev-python/html5lib
+	dev-python/humanize
+	dev-python/mistletoe
+	dev-python/pygments
+	dev-python/requests
+	dev-python/sqlalchemy
+	dev-python/SQLAlchemy-Utils"
+RDEPEND="${DEPEND}"
 BDEPEND=""
 
 S="${WORKDIR}/${MY_P}"
