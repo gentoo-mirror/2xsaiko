@@ -1,0 +1,16 @@
+#!/sbin/openrc-run
+# Copyright 2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="meta.sr.ht webhooks service"
+description=""
+command=/usr/bin/celery
+command_args="-A metasrht.webhooks worker --loglevel=INFO"
+command_user="srht-meta"
+output_log="/var/log/srht-meta-webhooks.log"
+error_log="${output_log}"
+
+depend() {
+  need net
+  use postgresql
+}

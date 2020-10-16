@@ -1,0 +1,11 @@
+--- a/setup.py	2020-10-13 14:25:23.859587369 +0200
++++ b/setup.py	2020-10-13 14:25:33.866254470 +0200
+@@ -5,7 +5,7 @@
+ import os
+ import sys
+ 
+-if subprocess.call(["npm", "i"], cwd="srht") != 0:
++if subprocess.call(["npm", "rebuild", "--offline"], cwd="srht") != 0:
+     sys.exit(1)
+ 
+ ver = os.environ.get("PKGVER") or subprocess.run(['git', 'describe', '--tags'],
