@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>pkg@dblsaiko.net</email>
+	</maintainer>
+	<use>
+		<flag name="srht-builds">builds.sr.ht integration</flag>
+		<flag name="cron">use cronjob</flag>
+	</use>
+</pkgmetadata>

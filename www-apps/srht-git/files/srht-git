@@ -1,0 +1,18 @@
+#!/sbin/openrc-run
+# Copyright 2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="git.sr.ht website service"
+description=""
+command=/usr/bin/gunicorn
+command_args="gitsrht.app:app -b ${SRHT_GIT_ADDR:-127.0.0.1:5001}"
+command_background=1
+pidfile="/var/run/${RC_SVCNAME}.pid"
+command_user="srht-git"
+output_log="/var/log/${RC_SVCNAME}.log"
+error_log="${output_log}"
+
+depend() {
+  need net
+  use postgresql
+}
