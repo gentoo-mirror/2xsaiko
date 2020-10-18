@@ -71,8 +71,8 @@ npm2x_set_globals() {
 #
 # NB: This is hacky as fuck since $A is supposed to be read-only.
 npm2x_filter_archives() {
-	if [[ ! ${_GO_MODULE_SET_GLOBALS_CALLED} ]]; then
-		die "go-module_set_globals must be called in global scope"
+	if [[ ! ${_NPM2X_SET_GLOBALS_CALLED} ]]; then
+		die "npm2x_set_globals must be called in global scope"
 	fi
 
 	A="$(
