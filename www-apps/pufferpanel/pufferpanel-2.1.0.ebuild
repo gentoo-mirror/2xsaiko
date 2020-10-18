@@ -3085,7 +3085,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 DEPEND="net-libs/nodejs[npm]"
-RDEPEND="${DEPEND}"
+RDEPEND="acct-user/pufferpanel"
 BDEPEND=""
 
 S="${WORKDIR}/PufferPanel-${PV}"
@@ -3109,9 +3109,16 @@ src_compile() {
 
 src_install() {
 	dobin cmd/pufferpanel
+	doinitd "${FILESDIR}/pufferpanel"
 
-	insinto /usr/lib/pufferpanel
+	keepdir /var/lib/pufferpanel
+
+	insinto /etc/pufferpanel
+	doins "${FILESDIR}/config.json"
+
+	insinto /var/lib/pufferpanel
 	doins -r assets/email
+
 	insinto /usr/lib/pufferpanel/www
 	doins -r client/dist/*
 }

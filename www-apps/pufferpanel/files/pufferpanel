@@ -1,0 +1,18 @@
+#!/sbin/openrc-run
+# Copyright 2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="pufferpanel daemon"
+description=""
+command=/usr/bin/pufferpanel
+command_args="run"
+command_user=pufferpanel
+output_log="/var/log/${SVCNAME}.log"
+error_log="${output_log}"
+directory="/etc/pufferpanel"
+command_background=1
+pidfile="/run/${SVCNAME}.pid"
+
+depend() {
+  :
+}
