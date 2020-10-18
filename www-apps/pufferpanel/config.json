@@ -1,0 +1,27 @@
+{
+  "logs": "/var/log/pufferpanel",
+  "web": {
+    "host": "0.0.0.0:7709"
+  },
+  "panel": {
+    "database": {
+      "dialect": "sqlite3",
+      "url": "file:/var/lib/pufferpanel/database.db?cache=shared"
+    },
+    "web": {
+      "files": "/usr/lib/pufferpanel/www"
+    },
+    "email": {
+      "templates": "/var/lib/pufferpanel/email/emails.json"
+    }
+  },
+  "token": {
+    "private": "/var/lib/pufferpanel/private.pem"
+  },
+  "daemon": {
+    "data": {
+      "cache": "/var/lib/pufferpanel/cache",
+      "servers": "/var/lib/pufferpanel/servers"
+    }
+  }
+}
