@@ -1,0 +1,6 @@
+jellyfin_data_dir="/var/lib/jellyfin"
+jellyfin_cache_dir="/var/cache/jellyfin"
+#web:jellyfin_web_args="--webdir=/usr/share/jellyfin/web"
+
+# Custom options
+jellyfin_args=""

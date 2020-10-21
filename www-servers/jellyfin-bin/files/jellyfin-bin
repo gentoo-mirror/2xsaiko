@@ -1,0 +1,16 @@
+#!/sbin/openrc-run
+# Copyright 2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="jellyfin daemon"
+description=""
+command=/usr/bin/jellyfin-bin
+command_args="--datadir ${jellyfin_data_dir} --cachedir ${jellyfin_cache_dir} ${jellyfin_web_args} ${jellyfin_args}"
+command_user="jellyfin"
+command_background=1
+output_log="/var/log/jellyfin.log"
+error_log="${output_log}"
+
+depend() {
+  need net
+}
