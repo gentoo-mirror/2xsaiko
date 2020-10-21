@@ -8,7 +8,8 @@ command=/usr/bin/jellyfin-bin
 command_args="--datadir ${jellyfin_data_dir} --cachedir ${jellyfin_cache_dir} ${jellyfin_web_args} ${jellyfin_args}"
 command_user="jellyfin"
 command_background=1
-output_log="/var/log/jellyfin.log"
+pidfile="/run/${SVCNAME}.pig"
+output_log="/var/log/${SVCNAME}.log"
 error_log="${output_log}"
 
 depend() {

@@ -14,7 +14,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="acct-user/jellyfin"
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	media-video/ffmpeg"
 BDEPEND=""
 
 IUSE="+web"
