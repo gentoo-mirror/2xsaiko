@@ -21,6 +21,7 @@ DEPEND="
 	dev-db/vsqlite++
 	dev-libs/libzip
 	dev-libs/rapidjson
+	net-libs/libssh[server]
 	sci-libs/gdal"
 RDEPEND="${DEPEND}"
 BDEPEND=""
