@@ -8,14 +8,20 @@ inherit cmake
 DESCRIPTION="Unified visual tool for database architects, developers, and DBAs"
 HOMEPAGE="https://www.mysql.com/products/workbench/"
 SRC_URI="
-	mysql-workbench-community-${PV}-src.tar.gz
+	https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community-${PV}-src.tar.gz
 	https://www.antlr.org/download/antlr-4.7.1-complete.jar"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND=""
+DEPEND="
+	dev-cpp/antlr-cpp:4
+	dev-db/mysql-connector-c++:0/7
+	dev-db/vsqlite++
+	dev-libs/libzip
+	dev-libs/rapidjson
+	sci-libs/gdal"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
