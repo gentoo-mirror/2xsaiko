@@ -38,8 +38,8 @@ src_prepare() {
 	sed -i 's/PYTHON_LIBRARIES/Python2_LIBRARIES/' "${S}"/library/grt/src/CMakeLists.txt
 
 	sed -i '/#include <boost\/signals/ausing namespace boost::placeholders;' \
-		library/forms/swig/mforms.i \
-		modules/db.mysql.sqlparser/src/*.cpp
+		"${S}"/library/forms/swig/mforms.i \
+		"${S}"/modules/db.mysql.sqlparser/src/*.cpp
 
 	cmake_src_prepare
 }
