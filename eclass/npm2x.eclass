@@ -39,6 +39,12 @@ EXPORT_FUNCTIONS src_unpack src_compile
 # "
 # @CODE
 
+# @ECLASS-VARIABLE: NPM-ARGS
+# @DESCRIPTION:
+# Arguments to pass to npm rebuild in src_compile.
+
+BDEPEND="net-libs/nodejs[npm]"
+
 npm2x_src_unpack() {
 	npm2x_filter_archives
 	default
@@ -47,7 +53,7 @@ npm2x_src_unpack() {
 }
 
 npm2x_src_compile() {
-	npm rebuild
+	npm rebuild ${NPM_ARGS}
 }
 
 # @FUNCTION: npm2x_set_globals
@@ -88,6 +94,7 @@ npm2x_filter_archives() {
 # directory in $S. To customize this behavior, call npm2x_unpack_modules
 # instead.
 npm2x_src_unpack_modules() {
+	cd "${S}"
 	npm2x_unpack_modules "${NPM_MODULES}"
 }
 
