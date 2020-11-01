@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for path in $(webapp-config -li pterodactyl-panel); do
+  php "${path}"/artisan schedule:run
+done
