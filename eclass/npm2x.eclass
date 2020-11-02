@@ -91,10 +91,8 @@ npm2x_filter_archives() {
 # @FUNCTION: npm2x_src_unpack_modules
 # @DESCRIPTION:
 # Unpacks all the modules specified in $NPM_MODULES into the node_modules
-# directory in $S. To customize this behavior, call npm2x_unpack_modules
-# instead.
+# directory. To customize this behavior, call npm2x_unpack_modules instead.
 npm2x_src_unpack_modules() {
-	cd "${S}"
 	npm2x_unpack_modules "${NPM_MODULES}"
 }
 
