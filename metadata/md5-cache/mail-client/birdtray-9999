@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install unpack
+DEPEND=dev-qt/qtx11extras:5 dev-db/sqlite:3
+DESCRIPTION=Run Thunderbird with a system tray icon.
+EAPI=7
+HOMEPAGE=https://github.com/gyunaev/birdtray
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=dev-qt/qtx11extras:5 dev-db/sqlite:3
+SLOT=0
+_eclasses_=desktop	7fd20552ce4cc97e8acb132a499a7dd8	estack	686eaab303305a908fd57b2fd7617800	git-r3	3e7ec3d6619213460c85e2aa48398441	multilib	98584e405e2b0264d37e8f728327fed1	qmake-utils	4eb5e05ef7ee630c003e3f0edc094135	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb
+_md5_=8d3ee025e39d16a7c4a85c1f17b918b8

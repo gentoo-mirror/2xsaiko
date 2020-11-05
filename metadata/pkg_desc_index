@@ -1,0 +1,61 @@
+acct-group/jellyfin 0: System group: jellyfin
+acct-group/pterodactyl 0: System group: pterodactyl
+acct-group/pufferpanel 0: System group: pufferpanel
+acct-group/sourcehut 0: System group: sourcehut
+acct-group/srht-git 0: System group: srht-git
+acct-group/srht-meta 0: System group: srht-meta
+acct-group/srht-paste 0: System group: srht-paste
+acct-user/jellyfin 0: User for jellyfin
+acct-user/pterodactyl 0 1: User for pterodactyl-daemon
+acct-user/pufferpanel 0: User for PufferPanel
+acct-user/srht-git 0 1: User account for git.sr.ht
+acct-user/srht-meta 0: User account for meta.sr.ht
+acct-user/srht-paste 0: User account for paste.sr.ht
+app-backup/backup-scripts 9999: Backup scripts based on borgbackup
+app-misc/mysql-workbench 8.0.22: Unified visual tool for database architects, developers, and DBAs
+app-misc/structorizer-bin 3.30 3.30-r1: Tool for creation of Nassi-Schneiderman Diagrams
+app-shells/grmlzshrc 0.17.4: grml's zsh setup
+app-shells/zsh-autosuggestions 0.5.2: Fish-like autosuggestions for zsh
+app-shells/zsh-syntax-highlighting 0.6.0: Fish shell like syntax highlighting for Zsh
+dev-games/aseprite 1.1.9: Animated sprite editor & pixel art tool
+dev-java/java-sdk-docs 14.0.2 15: Oracle's documentation bundle (including API) for Java SE
+dev-java/jetbrains-jre-bin 11.0.7 11.0.7-r1: JetBrains JDK
+dev-java/openjdk 14.0.2_p12 15_p36: Open source implementation of the Java programming language
+dev-java/openjdk-bin 14_p36 14.0.2_p12 15_p36: Prebuilt Java JDK binaries provided by AdoptOpenJDK
+dev-libs/quazip 1.1: Simple C++ wrapper over Gilles Vollant's ZIP/UNZIP package
+dev-python/PGPy 0.5.3-r1: Pretty Good Privacy for Python
+dev-python/SQLAlchemy-Utils 0.36.8: Various utility functions for SQLAlchemy.
+dev-python/asyncpg 0.21.0: A fast PostgreSQL Database Client Library for Python/asyncio.
+dev-python/emailthreads 0.1.3: Parses email threads into conversation trees
+dev-python/minio 5.0.10 5.0.10-r1: MinIO Python Library for Amazon S3 Compatible Cloud Storage for Python
+dev-python/mistletoe 0.7.2: A fast, extensible Markdown parser in pure Python.
+dev-python/pystache 0.5.4: Mustache for Python
+dev-python/scmsrht 0.22.4: sr.ht source control service shared code
+dev-python/srht 0.65.2 0.65.6: sr.ht shared code
+dev-util/clion 2020.1.2 2020.1.2-r1 2020.1.2-r2 2020.1.3 2020.2 2020.2.3 2020.2.4: C/C++ IDE
+dev-util/idea-ultimate 2020.1.3 2020.1.3-r1 2020.1.4 2020.2 2020.2-r1 2020.2.2: Intelligent Java IDE
+dev-util/pycharm-professional 2020.1.3 2020.1.3-r1: Python IDE for Professional Developers
+dev-util/rider 2020.2.2 2020.2.2-r1 2020.2.4: .NET IDE
+games-action/multimc 0.6.5 0.6.7 0.6.11 9999: Free, open source launcher and instance manager for Minecraft.
+games-rpg/thedarkmod 2.08: A first-person stealth video game inspired by the Thief series
+kde-apps/dolphin-plugins-seafile 1.1.0 1.2.0: A plugin for dolphin to show the seafile synchronization status
+kde-misc/breezeway-mod 0.5 9999: A window decoration for KDE
+kde-misc/hello 9999: A window decoration for KDE
+kde-misc/kde-rounded-corners 9999: Rounds the corners of your windows
+kde-misc/kde-shapecorners 9999: Rounds the corners of your windows
+mail-client/birdtray 1.6 9999: Run Thunderbird with a system tray icon.
+media-gfx/blockbench-bin 3.6.6: A boxy 3D model editor
+media-video/obs-glcapture 9999: GL capture for OBS
+net-im/discord-canary-bin 0.0.114: All-in-one voice and text chat for gamers - Canary branch
+net-misc/pterodactyl-daemon 0.6.13 1.0.1: Server control and management daemon for Pterodactyl Panel
+sys-process/ytop 0.6.2: A TUI system monitor written in Rust
+virtual/jdk 14 15: Virtual for Java Development Kit (JDK)
+virtual/jre 14 15: Virtual for Java Runtime Environment (JRE)
+www-apps/pterodactyl-panel 0.7.18 0.7.18-r1 1.0.3 1.0.3-r1: An open-source game server management panel
+www-apps/pterodactyl-panel-common 0: Common files for pterodactyl-panel
+www-apps/pufferpanel 2.1.0: An open source game server management panel
+www-apps/srht-git 0.62.0 0.62.0-r1 0.62.2: sr.ht git services
+www-apps/srht-meta 0.44.2 0.44.2-r1 0.44.2-r2 0.51.2: sr.ht core account services
+www-apps/srht-paste 0.11.2 0.11.2-r1 0.11.2-r2: sr.ht pastebin services
+www-servers/jellyfin-bin 10.6.4: The Free Software Media System - prebuilt binaries
+x11-apps/xcur2png 9999: Convert Xcur format to PNG

@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=Fish shell like syntax highlighting for Zsh
+EAPI=7
+HOMEPAGE=https://github.com/zsh-users/zsh-syntax-highlighting
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+SLOT=0
+SRC_URI=https://github.com/zsh-users/zsh-syntax-highlighting/archive/0.6.0.tar.gz
+_md5_=914e90b456ba8466d7d637565f39e667

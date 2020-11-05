@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=Backup scripts based on borgbackup
+EAPI=7
+HOMEPAGE=https://git.sr.ht/~dblsaiko/backup-scripts
+IUSE=cron
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=app-backup/borgbackup cron? ( virtual/cron )
+SLOT=0
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_md5_=68e0e4b4bf524d52de539563b624131e
