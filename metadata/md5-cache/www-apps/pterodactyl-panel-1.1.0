@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst prepare prerm setup unpack
+DEPEND=>=dev-db/mariadb-10.2:* dev-db/redis >=dev-lang/php-7.3:*[cli,ssl,gd,mysql,pdo,tokenizer,bcmath,xml,curl,zip] dev-php/composer || ( virtual/httpd-basic virtual/httpd-cgi virtual/httpd-fastcgi ) >=app-admin/webapp-config-1.50.15
+DESCRIPTION=An open-source game server management panel
+EAPI=7
+HOMEPAGE=https://pterodactyl.io/
+IUSE=vhosts
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=>=dev-db/mariadb-10.2:* dev-db/redis >=dev-lang/php-7.3:*[cli,ssl,gd,mysql,pdo,tokenizer,bcmath,xml,curl,zip] dev-php/composer >=app-admin/webapp-config-1.50.15
+RESTRICT=network-sandbox
+SLOT=1.1.0
+SRC_URI=https://github.com/pterodactyl/panel/releases/download/v1.1.0/panel.tar.gz -> pterodactyl-panel-1.1.0.tar.gz
+_eclasses_=webapp	16783e418aca3ffa461d68310bf7ab12
+_md5_=dcdbc98618771ec4b6879a7ca9698992
