@@ -44,6 +44,7 @@ kde-misc/breezeway-mod 0.5 9999: A window decoration for KDE
 kde-misc/hello 9999: A window decoration for KDE
 kde-misc/kde-rounded-corners 9999: Rounds the corners of your windows
 kde-misc/kde-shapecorners 9999: Rounds the corners of your windows
+kde-misc/lightly 9999: A window decoration for KDE
 mail-client/birdtray 1.6 9999: Run Thunderbird with a system tray icon.
 media-gfx/blockbench-bin 3.6.6: A boxy 3D model editor
 media-video/obs-glcapture 9999: GL capture for OBS
