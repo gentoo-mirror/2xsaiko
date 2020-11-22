@@ -17,8 +17,8 @@ HOMEPAGE="https://git.sr.ht/~sircmpwn/core.sr.ht"
 NPM_MODULES="
 	https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz	balanced-match
 	https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz	brace-expansion
-	https://registry.npmjs.org/clean-css/-/clean-css-4.1.11.tgz	clean-css
 	https://registry.npmjs.org/clean-css-cli/-/clean-css-cli-4.1.11.tgz	clean-css-cli
+	https://registry.npmjs.org/clean-css/-/clean-css-4.1.11.tgz	clean-css
 	https://registry.npmjs.org/commander/-/commander-2.15.1.tgz	commander
 	https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz	concat-map
 	https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz	fs.realpath
