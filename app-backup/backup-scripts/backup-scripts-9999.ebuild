@@ -23,14 +23,15 @@ CONFIG_PROTECT="/etc/backup"
 src_install() {
 	dosbin system-backup
 
+	if use cron; then
+		insinto /etc/cron.d
+		newins crontab "${PN}"
+	fi
+
 	insinto /etc/backup
 	doins excludes
 	dodir /etc/backup/before.d
 	dodir /etc/backup/after.d
 	insopts -m0600
 	doins config
-
-	if use cron; then
-		dosym ../../usr/sbin/system-backup /etc/cron.daily/system-backup
-	fi
 }
