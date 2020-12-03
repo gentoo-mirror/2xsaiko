@@ -9,4 +9,4 @@ PROPERTIES=live
 RDEPEND=app-backup/borgbackup cron? ( virtual/cron )
 SLOT=0
 _eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
-_md5_=68e0e4b4bf524d52de539563b624131e
+_md5_=eddf6224677fbab785273427b89f1968
