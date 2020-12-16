@@ -54,7 +54,7 @@ kde-misc/lightly 9999: A window decoration for KDE
 mail-client/birdtray 1.6 9999: Run Thunderbird with a system tray icon.
 media-gfx/blockbench-bin 3.6.6: A boxy 3D model editor
 media-video/obs-glcapture 9999: GL capture for OBS
-net-im/discord-canary-bin 0.0.114 0.0.115: All-in-one voice and text chat for gamers - Canary branch
+net-im/discord-canary-bin 0.0.116: All-in-one voice and text chat for gamers - Canary branch
 net-misc/pterodactyl-daemon 0.6.13 1.0.1 1.1.0 1.1.2: Server control and management daemon for Pterodactyl Panel
 sys-process/bottom 0.5.3: A process/system monitor with a customizable interface and a multitude of features.
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
