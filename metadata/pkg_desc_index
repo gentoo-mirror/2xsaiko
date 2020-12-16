@@ -25,6 +25,7 @@ dev-java/openjdk-bin 14_p36 14.0.2_p12 15_p36: Prebuilt Java JDK binaries provid
 dev-libs/quazip 1.1: Simple C++ wrapper over Gilles Vollant's ZIP/UNZIP package
 dev-python/PGPy 0.5.3-r1: Pretty Good Privacy for Python
 dev-python/SQLAlchemy-Utils 0.36.8: Various utility functions for SQLAlchemy.
+dev-python/adblock 0.3.2: Brave's adblock library in Python
 dev-python/asyncpg 0.21.0: A fast PostgreSQL Database Client Library for Python/asyncio.
 dev-python/billiard 3.6.0.0 3.6.3.0: Python multiprocessing fork
 dev-python/celery 5.0.2-r1 5.0.2-r2: Asynchronous task queue/job queue based on distributed message passing
