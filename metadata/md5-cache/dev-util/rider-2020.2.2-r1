@@ -9,5 +9,5 @@ RDEPEND=>=dev-java/jetbrains-jre-bin-11.0.7-r1 dev-java/jansi-native dev-libs/li
 RESTRICT=strip splitdebug
 SLOT=0
 SRC_URI=https://download.jetbrains.com/rider/JetBrains.Rider-2020.2.2.tar.gz
-_eclasses_=desktop	7fd20552ce4cc97e8acb132a499a7dd8
+_eclasses_=desktop	8f9bfcc33705104f56748d9dedb3177a
 _md5_=7aebe49b0cacc274fcd566e24a2f8ba1

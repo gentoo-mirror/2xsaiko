@@ -8,5 +8,5 @@ LICENSE=all-rights-reserved
 RDEPEND=dev-java/jetbrains-jre-bin dev-java/jansi-native dev-libs/libdbusmenu
 SLOT=0
 SRC_URI=https://download.jetbrains.com/idea/ideaIU-2020.1.3-no-jbr.tar.gz
-_eclasses_=desktop	7fd20552ce4cc97e8acb132a499a7dd8
+_eclasses_=desktop	8f9bfcc33705104f56748d9dedb3177a
 _md5_=e3e4c504250290da27ba4c90eacf98c0
