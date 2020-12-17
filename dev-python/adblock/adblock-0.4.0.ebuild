@@ -7,27 +7,22 @@ PYTHON_COMPAT=( python3_{7..9} )
 DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 CRATES="
-	adblock-0.3.2
+	adblock-0.3.4
 	addr-0.2.0
 	addr2line-0.14.0
 	adler-0.2.3
-	ahash-0.2.19
 	aho-corasick-0.7.15
-	autocfg-0.1.7
 	autocfg-1.0.1
 	backtrace-0.3.55
-	base64-0.10.1
+	base64-0.13.0
 	bitflags-1.2.1
 	byteorder-1.3.4
 	cc-1.0.66
 	cfg-if-0.1.10
 	cfg-if-1.0.0
-	const-random-0.1.13
-	const-random-macro-0.1.13
 	core-foundation-0.9.1
 	core-foundation-sys-0.8.2
 	crc32fast-1.2.1
-	crunchy-0.2.2
 	ctor-0.1.16
 	either-1.6.1
 	error-chain-0.12.4
@@ -36,10 +31,8 @@ CRATES="
 	foreign-types-shared-0.1.1
 	form_urlencoded-1.0.0
 	getrandom-0.1.15
-	getrandom-0.2.0
 	ghost-0.1.2
 	gimli-0.23.0
-	hashbrown-0.6.3
 	idna-0.1.5
 	idna-0.2.0
 	indoc-0.3.6
@@ -47,7 +40,7 @@ CRATES="
 	instant-0.1.9
 	inventory-0.1.10
 	inventory-impl-0.1.10
-	itertools-0.8.2
+	itertools-0.9.0
 	lazy_static-1.4.0
 	libc-0.2.81
 	lock_api-0.4.2
@@ -111,7 +104,6 @@ CRATES="
 	syn-1.0.54
 	tempfile-3.1.0
 	thread_local-1.0.1
-	tiny-keccak-2.0.2
 	tinyvec-1.1.0
 	tinyvec_macros-0.1.0
 	twoway-0.2.1
@@ -153,13 +145,11 @@ BDEPEND=""
 
 S="${WORKDIR}/python-adblock-${PV}"
 
-src_prepare() {
-	# fix missing Cargo.lock file in repo
-	cp "${FILESDIR}"/Cargo.lock.xz "${S}"/
-	xz -d "${S}"/Cargo.lock.xz
+RESTRICT="mirror"
 
+src_prepare() {
 	# required by distutils-r1
-	printf '[build-system]\nbuild-backend = "poetry.masonry.api"' >> "${S}"/pyproject.toml
+	printf '\n[build-system]\nbuild-backend = "poetry.masonry.api"' >> "${S}"/pyproject.toml
 
 	# patch library to not try to download files at build time
 	sed -i "s,List::fetch(),List::from_str(include_str!(\"${DISTDIR}/public_suffix_list-${PSL_COMMIT}.dat\"))," \
