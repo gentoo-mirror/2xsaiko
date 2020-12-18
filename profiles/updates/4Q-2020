@@ -1,0 +1,4 @@
+move dev-util/idea-ultimate dev-util/idea-ultimate-bin
+move dev-util/clion dev-util/clion-bin
+move dev-util/pycharm-professional dev-util/pycharm-professional-bin
+move dev-util/rider dev-util/rider-bin
