@@ -128,7 +128,7 @@ inherit cargo distutils-r1
 PSL_COMMIT="6e6b22da590a2d5e6eef667393883e437d8e013d"
 
 DESCRIPTION="Brave's adblock library in Python"
-HOMEPAGE="https://github.com/minio/minio-py"
+HOMEPAGE="https://github.com/ArniDagur/python-adblock"
 SRC_URI="
 	https://github.com/ArniDagur/python-adblock/archive/${PV}.tar.gz -> ${P}.tar.gz
 	https://raw.githubusercontent.com/publicsuffix/list/${PSL_COMMIT}/public_suffix_list.dat -> public_suffix_list-${PSL_COMMIT}.dat
