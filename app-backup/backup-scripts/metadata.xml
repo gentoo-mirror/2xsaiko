@@ -2,7 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>pkg@dblsaiko.net</email>
+		<email>gentoo@dblsaiko.net</email>
 	</maintainer>
 	<use>
 		<flag name="cron">Install a daily cron script to back up the system.</flag>
