@@ -16,6 +16,12 @@ dev-java/openjdk-bin:gentoo-vm - Allow this JDK to be recognised by Gentoo (pack
 dev-java/openjdk-bin:headless-awt - Don't install the X backend for AWT, needed by some GUIs (used to be X flag)
 dev-java/openjdk-bin:source - Install JVM sources
 dev-java/openjdk-bin:webstart - Provide javaws command through symlink to icedtea-web
+dev-python/kombu:mongodb - Enables MongoDB backend
+dev-python/kombu:msgpack - Enables MessagePack (de)serializer for Python
+dev-python/kombu:redis - Enables Redis backend
+dev-python/kombu:sqs - Enables Amazon SQS transport module for Kombu
+dev-python/kombu:yaml - Enables yaml backend
+dev-python/py-amqp:extras - Install extra tools to generate initial Python mod from an AMQP XML file
 kde-misc/hello:colors - Install hello color schemes
 kde-misc/hello:decoration - Compile window decorations
 kde-misc/hello:effects - Compile window manager effects
