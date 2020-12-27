@@ -173,9 +173,6 @@ python_compile() {
 }
 
 python_install() {
-	local root=${D%/}/_${EPYTHON}
-	[[ ${DISTUTILS_SINGLE_IMPL} ]] && root=${D%/}
-
 	insinto "$(python_get_sitedir)/adblock"
 	newins "${BUILD_DIR}/release/libadblock.so" adblock.so
 
