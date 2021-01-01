@@ -62,7 +62,6 @@ sys-process/bottom 0.5.3: A process/system monitor with a customizable interface
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
 virtual/jdk 14 15: Virtual for Java Development Kit (JDK)
 virtual/jre 14 15: Virtual for Java Runtime Environment (JRE)
-virtual/rust 1.48.0: Virtual for Rust language compiler
 www-apps/pterodactyl-panel 0.7.18 0.7.18-r1 1.0.3 1.0.3-r1 1.1.0 1.1.0-r1 1.1.1: An open-source game server management panel
 www-apps/pterodactyl-panel-common 0: Common files for pterodactyl-panel
 www-apps/pufferpanel 2.1.0: An open source game server management panel
