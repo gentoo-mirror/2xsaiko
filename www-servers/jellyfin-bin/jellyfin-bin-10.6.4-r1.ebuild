@@ -1,4 +1,4 @@
-# Copyright 2020 Gentoo Authors
+# Copyright 2020-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -47,6 +47,6 @@ src_install() {
 	fi
 
 	dosym "../../opt/${PN}/jellyfin" "/usr/bin/${PN}"
-	doinitd "${FILESDIR}/${PN}"
+	newinitd "${FILESDIR}/${PN}-r1" "${PN}"
 	newconfd "${WORKDIR}/${PN}.conf" "${PN}"
 }
