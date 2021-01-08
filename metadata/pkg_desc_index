@@ -1,4 +1,5 @@
 acct-group/jellyfin 0: System group: jellyfin
+acct-group/matterbridge 0: System group: matterbridge
 acct-group/pterodactyl 0: System group: pterodactyl
 acct-group/pufferpanel 0: System group: pufferpanel
 acct-group/sourcehut 0: System group: sourcehut
@@ -6,6 +7,7 @@ acct-group/srht-git 0: System group: srht-git
 acct-group/srht-meta 0: System group: srht-meta
 acct-group/srht-paste 0: System group: srht-paste
 acct-user/jellyfin 0: User for jellyfin
+acct-user/matterbridge 0: user for matterbridge
 acct-user/pterodactyl 0 1: User for pterodactyl-daemon
 acct-user/pufferpanel 0: User for PufferPanel
 acct-user/srht-git 0 1: User account for git.sr.ht
@@ -57,6 +59,7 @@ mail-client/birdtray 1.6 9999: Run Thunderbird with a system tray icon.
 media-gfx/blockbench-bin 3.6.6: A boxy 3D model editor
 media-video/obs-glcapture 9999: GL capture for OBS
 net-im/discord-canary-bin 0.0.116: All-in-one voice and text chat for gamers - Canary branch
+net-im/matterbridge 1.21.0: Bridge between a vast array of instant messaging services
 net-misc/pterodactyl-daemon 0.6.13 1.0.1 1.1.0 1.1.2: Server control and management daemon for Pterodactyl Panel
 sys-process/bottom 0.5.3: A process/system monitor with a customizable interface and a multitude of features.
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
