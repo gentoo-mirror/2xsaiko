@@ -1,13 +1,11 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
 inherit autotools check-reqs flag-o-matic java-pkg-2 java-vm-2 multiprocessing pax-utils toolchain-funcs
 
-# we need -ga tag to fetch tarball and unpack it, but exact number everywhere else to
-# set build version properly
-MY_PV=${PV/_p/+}
+MY_PV="${PV/_p/+}"
 SLOT="${MY_PV%%[.+]*}"
 
 DESCRIPTION="Open source implementation of the Java programming language"
@@ -17,7 +15,7 @@ SRC_URI="https://hg.${PN}.java.net/jdk-updates/jdk${SLOT}u/archive/jdk-${MY_PV}.
 LICENSE="GPL-2"
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc64"
 
-IUSE="alsa cups debug doc examples gentoo-vm headless-awt javafx +jbootstrap nsplugin +pch selinux source systemtap webstart"
+IUSE="alsa cups debug doc examples gentoo-vm headless-awt javafx +jbootstrap +pch selinux source systemtap"
 
 COMMON_DEPEND="
 	media-libs/freetype:2=
@@ -66,11 +64,9 @@ DEPEND="
 		dev-java/openjdk:${SLOT}
 	)
 "
+#	javafx? ( dev-java/openjfx:${SLOT}= )
 
-PDEPEND="
-	webstart? ( >=dev-java/icedtea-web-1.6.1:0 )
-	nsplugin? ( >=dev-java/icedtea-web-1.6.1:0[nsplugin] )
-"
+REQUIRED_USE="javafx? ( alsa !headless-awt )"
 
 S="${WORKDIR}/jdk${SLOT}u-jdk-${MY_PV}"
 
@@ -90,7 +86,7 @@ openjdk_check_requirements() {
 pkg_pretend() {
 	openjdk_check_requirements
 	if [[ ${MERGE_TYPE} != binary ]]; then
-		has ccache ${FEATURES} && die "FEATURES=ccache doesn't work with ${PN}"
+		has ccache ${FEATURES} && die "FEATURES=ccache doesn't work with ${PN}, bug #677876"
 	fi
 }
 
@@ -112,7 +108,7 @@ pkg_setup() {
 
 	local vm
 	for vm in ${JAVA_PKG_WANT_BUILD_VM}; do
-		if [[ -d ${eprefix}/usr/lib/jvm/${vm} ]]; then
+		if [[ -d ${EPREFIX}/usr/lib/jvm/${vm} ]]; then
 			java-pkg-2_pkg_setup
 			return
 		fi
@@ -171,6 +167,15 @@ src_configure() {
 		--enable-dtrace=$(usex systemtap yes no)
 		--enable-headless-only=$(usex headless-awt yes no)
 	)
+
+	# if use javafx; then
+	# 	local zip="${EROOT%/}/usr/$(get_libdir)/openjfx-${SLOT}/javafx-exports.zip"
+	# 	if [[ -r ${zip} ]]; then
+	# 		myconf+=( --with-import-modules="${zip}" )
+	# 	else
+	# 		die "${zip} not found or not readable"
+	# 	fi
+	# fi
 
 	# PaX breaks pch, bug #601016
 	if use pch && ! host-is-pax; then
