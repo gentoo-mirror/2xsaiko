@@ -19,7 +19,7 @@ app-shells/zsh-autosuggestions 0.5.2: Fish-like autosuggestions for zsh
 app-shells/zsh-syntax-highlighting 0.6.0: Fish shell like syntax highlighting for Zsh
 dev-games/aseprite 1.1.9: Animated sprite editor & pixel art tool
 dev-java/java-sdk-docs 14.0.2 15: Oracle's documentation bundle (including API) for Java SE
-dev-java/jetbrains-jre-bin 11.0.7 11.0.7-r1: JetBrains JDK
+dev-java/jetbrains-jre-bin 11.0.7 11.0.7-r1 11.0.9_p1: JetBrains JDK
 dev-java/openjdk 14.0.2_p12 15_p36: Open source implementation of the Java programming language
 dev-java/openjdk-bin 14_p36 14.0.2_p12 15_p36: Prebuilt Java JDK binaries provided by AdoptOpenJDK
 dev-libs/quazip 1.1: Simple C++ wrapper over Gilles Vollant's ZIP/UNZIP package
