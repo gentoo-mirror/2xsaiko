@@ -46,7 +46,7 @@ dev-util/clion-bin 2020.1.2 2020.1.2-r1 2020.1.2-r2 2020.1.3 2020.2 2020.2.3 202
 dev-util/corrosion 9999: Use Rust in CMake projects
 dev-util/idea-ultimate-bin 2020.1.3 2020.1.3-r1 2020.1.4 2020.2 2020.2-r1 2020.2.2 2020.3: Intelligent Java IDE
 dev-util/pycharm-professional-bin 2020.1.3 2020.1.3-r1 2020.3: Python IDE for Professional Developers
-dev-util/rider-bin 2020.2.2 2020.2.2-r1 2020.2.4: .NET IDE
+dev-util/rider-bin 2020.2.2-r1 2020.2.4 2020.3.2: .NET IDE
 games-action/multimc 0.6.5 0.6.7 0.6.11 9999: Free, open source launcher and instance manager for Minecraft.
 games-rpg/thedarkmod 2.08: A first-person stealth video game inspired by the Thief series
 kde-apps/dolphin-plugins-seafile 1.1.0 1.2.0: A plugin for dolphin to show the seafile synchronization status
