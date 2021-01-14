@@ -1,4 +1,4 @@
-# Copyright 2020 Gentoo Authors
+# Copyright 2020-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -50,8 +50,8 @@ src_install() {
 	dodir "${dir}"
 	cp -a "${S}"/* "${ED}/${dir}/"
 
-	dosym "${dir}/bin/${PN}.sh" "/usr/bin/${PN}"
-	dosym "${dir}/bin/${PN}.png" "/usr/share/pixmaps/${PN}.png"
+	dosym "${dir}/bin/rider.sh" "/usr/bin/${PN}"
+	dosym "${dir}/bin/rider.png" "/usr/share/pixmaps/${PN}.png"
 	make_desktop_entry "${PN}" "Rider" "${PN}" "Development;IDE;" "StartupWMClass=jetbrains-rider"
 
 	# recommended by: https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
