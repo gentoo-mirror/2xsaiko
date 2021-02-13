@@ -1,4 +1,4 @@
-# Copyright 2020 Gentoo Authors
+# Copyright 2020-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -22,7 +22,9 @@ DEPEND="
 	dev-libs/libzip
 	dev-libs/rapidjson
 	net-libs/libssh[server]
-	sci-libs/gdal"
+	sci-libs/gdal
+	dev-cpp/gtkmm:3.0
+	app-crypt/libsecret"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
