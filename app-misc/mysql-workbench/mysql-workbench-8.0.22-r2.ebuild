@@ -30,21 +30,14 @@ BDEPEND=""
 
 S="${WORKDIR}/mysql-workbench-community-${PV}-src"
 
+PATCHES="${FILESDIR}/fix-cmake-build-8.0.22.patch"
+
 src_unpack() {
 	unpack "mysql-workbench-community-${PV}-src.tar.gz"
 }
 
 src_prepare() {
-	sed -i \
-		-e 's/PythonLibs 2.6/Python2 COMPONENTS Development/' \
-		-e 's/PYTHONLIBS_FOUND/Python2_FOUND/' \
-		-e 's/find_program(PYTHON_EXEC "python2")/set(PYTHON_EXEC ${Python2_EXECUTABLE})/' \
-		-e '/pkg_check_modules(PYTHON REQUIRED python)/d' \
-		-e '/# We need to be able to/aset(PYTHON_INCLUDE_DIRS ${Python2_INCLUDE_DIRS})' \
-		-e '/# We need to be able to/aset(PYTHON_LIBRARIES ${Python2_LIBRARIES})' \
-		"${S}"/CMakeLists.txt
-
-	sed -i 's/PYTHON_LIBRARIES/Python2_LIBRARIES/' "${S}"/library/grt/src/CMakeLists.txt
+	cp -r "${S}" "${WORKDIR}/oldsrc"
 
 	sed -i '/#include <boost\/signals/ausing namespace boost::placeholders;' \
 		"${S}"/library/forms/swig/mforms.i \
