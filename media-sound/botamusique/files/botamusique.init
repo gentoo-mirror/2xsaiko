@@ -1,0 +1,17 @@
+#!/sbin/openrc-run
+# Copyright 2021 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="botamusique daemon"
+description="Music bot for Mumble"
+command=/usr/bin/botamusique
+command_args="--config ${botamusique_config} ${botamusique_args}"
+command_user="botamusique"
+command_background=1
+pidfile="/run/${SVCNAME}.pid"
+output_log="/var/log/${SVCNAME}.log"
+error_log="${output_log}"
+
+start_pre() {
+	checkpath -fo "${command_user}" "${output_log}"
+}
