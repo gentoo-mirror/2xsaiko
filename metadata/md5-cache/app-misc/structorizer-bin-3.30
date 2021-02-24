@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=>=virtual/jre-1.8
 SLOT=0
 SRC_URI=https://github.com/fesch/Structorizer.Desktop/releases/download/3.30-10/structorizer_3.30-10.zip
-_eclasses_=desktop	7fd20552ce4cc97e8acb132a499a7dd8
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28
 _md5_=2e3cc81670450ad3cb5c3e557d70a06d
