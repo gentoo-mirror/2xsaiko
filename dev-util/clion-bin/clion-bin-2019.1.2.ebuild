@@ -1,12 +1,13 @@
-# Copyright 2020 Gentoo Authors
+# Copyright 2020-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 inherit desktop
 
-DESCRIPTION="Intelligent Java IDE"
-HOMEPAGE="https://www.jetbrains.com/idea/"
-SRC_URI="https://download.jetbrains.com/idea/ideaIU-${PV}-no-jbr.tar.gz"
+DESCRIPTION="C/C++ IDE"
+HOMEPAGE="https://www.jetbrains.com/clion/"
+#SRC_URI="https://download.jetbrains.com/cpp/CLion-${PV}-no-jbr.tar.gz"
+SRC_URI="https://download.jetbrains.com/cpp/CLion-${PV}.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -18,20 +19,20 @@ RDEPEND="${DEPEND}
 	dev-java/jetbrains-jre-bin
 	dev-java/jansi-native
 	dev-libs/libdbusmenu
-	=dev-util/lldb-9*"
+	dev-util/lldb"
 BDEPEND="dev-util/patchelf"
 
-_BUILDVER=201.8538.31
-_IDE=idea-IU
+_IDE=clion
 
-S="${WORKDIR}/${_IDE}-${_BUILDVER}"
+RESTRICT="strip splitdebug mirror"
+
+S="${WORKDIR}/${_IDE}-${PV}"
 
 src_prepare() {
+	rm -r "${S}/jbr"
 	rm -vf "${S}"/plugins/maven/lib/maven3/lib/jansi-native/*/libjansi*
 	rm -vrf "${S}"/lib/pty4j-native/linux/ppc64le
 	rm -vf "${S}"/bin/libdbm64*
-
-	patchelf --replace-needed liblldb.so liblldb.so.9 "${S}"/plugins/Kotlin/bin/linux/LLDBFrontend || die "Unable to patch LLDBFrontend for lldb"
 
 	sed -i \
 		-e "\$a\\\\" \
@@ -45,15 +46,13 @@ src_prepare() {
 }
 
 src_install() {
-	local dir="/opt/${PN}-${_BUILDVER}"
+	local dir="/opt/${P}"
+	dodir "${dir}"
+	cp -a "${S}"/* "${ED}/${dir}/"
 
-	insinto "${dir}"
-	doins -r *
-	fperms 755 "${dir}"/bin/{format.sh,idea.sh,inspect.sh,printenv.py,restart.py,fsnotifier{,64}}
-
-	dosym "${dir}/bin/idea.sh" "/usr/bin/${PN}"
-	dosym "${dir}/bin/idea.png" "/usr/share/pixmaps/${PN}.png"
-	make_desktop_entry "${PN}" "IntelliJ IDEA" "${PN}" "Development;IDE;" "StartupWMClass=jetbrains-idea"
+	dosym "${dir}/bin/${_IDE}.sh" "/usr/bin/${PN}"
+	dosym "${dir}/bin/${_IDE}.svg" "/usr/share/pixmaps/${PN}.svg"
+	make_desktop_entry "${PN}" "CLion" "${PN}" "Development;IDE;" "StartupWMClass=jetbrains-clion"
 
 	# recommended by: https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
 	mkdir -p "${D}/etc/sysctl.d/" || die
