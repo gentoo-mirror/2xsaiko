@@ -1,4 +1,4 @@
-# Copyright 2020 Gentoo Authors
+# Copyright 2020-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -17,14 +17,16 @@ DEPEND=""
 RDEPEND="${DEPEND}
 	dev-java/jetbrains-jre-bin
 	dev-java/jansi-native
-	dev-libs/libdbusmenu
-	=dev-util/lldb-9*"
+	dev-libs/libdbusmenu"
 BDEPEND="dev-util/patchelf"
 
-_BUILDVER=201.8538.31
-_IDE=idea-IU
+RESTRICT="strip splitdebug mirror"
 
-S="${WORKDIR}/${_IDE}-${_BUILDVER}"
+src_unpack() {
+	default_src_unpack
+
+	mv idea-IU* "${P}"
+}
 
 src_prepare() {
 	rm -vf "${S}"/plugins/maven/lib/maven3/lib/jansi-native/*/libjansi*
@@ -45,7 +47,7 @@ src_prepare() {
 }
 
 src_install() {
-	local dir="/opt/${PN}-${_BUILDVER}"
+	local dir="/opt/${P}"
 
 	insinto "${dir}"
 	doins -r *
