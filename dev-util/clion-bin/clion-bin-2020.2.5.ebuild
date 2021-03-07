@@ -24,7 +24,7 @@ BDEPEND="dev-util/patchelf"
 
 _IDE=clion
 
-RESTRICT="strip splitdebug"
+RESTRICT="strip splitdebug mirror"
 
 S="${WORKDIR}/${_IDE}-${PV}"
 
@@ -51,7 +51,7 @@ src_install() {
 	cp -a "${S}"/* "${ED}/${dir}/"
 
 	dosym "${dir}/bin/${_IDE}.sh" "/usr/bin/${PN}"
-	dosym "${dir}/bin/${_IDE}.png" "/usr/share/pixmaps/${PN}.png"
+	dosym "${dir}/bin/${_IDE}.svg" "/usr/share/pixmaps/${PN}.svg"
 	make_desktop_entry "${PN}" "CLion" "${PN}" "Development;IDE;" "StartupWMClass=jetbrains-clion"
 
 	# recommended by: https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
