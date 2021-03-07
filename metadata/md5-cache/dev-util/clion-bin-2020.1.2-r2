@@ -9,4 +9,4 @@ RDEPEND=dev-java/jetbrains-jre-bin dev-java/jansi-native dev-libs/libdbusmenu de
 SLOT=0
 SRC_URI=https://download.jetbrains.com/cpp/CLion-2020.1.2.tar.gz
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28
-_md5_=da3bedc6933c7a71ccbba9dae5c209b4
+_md5_=23d5bbc35cacec5773023edccede1c58
