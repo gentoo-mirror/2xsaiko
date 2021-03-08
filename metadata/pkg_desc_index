@@ -18,7 +18,7 @@ acct-user/srht-paste 0: User account for paste.sr.ht
 app-backup/backup-scripts 9999: Backup scripts based on borgbackup
 app-misc/mysql-workbench 8.0.22-r2 8.0.23: Unified visual tool for database architects, developers, and DBAs
 app-misc/structorizer-bin 3.30 3.30-r1: Tool for creation of Nassi-Schneiderman Diagrams
-app-shells/grmlzshrc 0.17.4: grml's zsh setup
+app-shells/grmlzshrc 0.18.0: grml's zsh setup
 app-shells/zsh-autosuggestions 0.5.2: Fish-like autosuggestions for zsh
 app-shells/zsh-syntax-highlighting 0.6.0: Fish shell like syntax highlighting for Zsh
 dev-games/aseprite 1.1.9: Animated sprite editor & pixel art tool
