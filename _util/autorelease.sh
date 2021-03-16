@@ -78,3 +78,6 @@ while read version; do
 done < <(collect_new 'rider' 'Rider' 'RD-RELEASE-licensing-RELEASE' 'version')
 
 rm "${jb_updates}"
+
+git add state
+git commit -m "Auto updates - $(date)" state
