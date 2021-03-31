@@ -4,6 +4,7 @@ DEPEND=acct-user/matterbridge
 DESCRIPTION=Bridge between a vast array of instant messaging services
 EAPI=7
 HOMEPAGE=https://github.com/42wim/matterbridge
+INHERIT=go-module
 KEYWORDS=~amd64 ~x86
 LICENSE=Apache-2.0
 RDEPEND=acct-user/matterbridge

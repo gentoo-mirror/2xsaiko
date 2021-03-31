@@ -3,6 +3,7 @@ DEPEND=media-libs/libicns
 DESCRIPTION=Tool for creation of Nassi-Schneiderman Diagrams
 EAPI=7
 HOMEPAGE=https://structorizer.fisch.lu/
+INHERIT=desktop
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=>=virtual/jre-1.8

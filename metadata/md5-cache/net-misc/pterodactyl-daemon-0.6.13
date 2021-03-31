@@ -4,6 +4,7 @@ DEPEND=acct-user/pterodactyl net-libs/nodejs[npm] app-emulation/docker
 DESCRIPTION=Server control and management daemon for Pterodactyl Panel
 EAPI=7
 HOMEPAGE=https://pterodactyl.io/
+INHERIT=npm2x
 KEYWORDS=~amd64 ~x86
 LICENSE=MIT
 RDEPEND=acct-user/pterodactyl net-libs/nodejs[npm] app-emulation/docker

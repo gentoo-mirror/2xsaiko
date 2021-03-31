@@ -4,6 +4,7 @@ DEPEND=net-libs/nodejs[npm]
 DESCRIPTION=An open source game server management panel
 EAPI=7
 HOMEPAGE=https://pufferpanel.com/
+INHERIT=go-module npm2x
 KEYWORDS=~amd64 ~x86
 LICENSE=Apache-2.0
 RDEPEND=acct-user/pufferpanel
