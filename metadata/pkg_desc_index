@@ -62,7 +62,7 @@ kde-misc/kde-shapecorners 9999: Rounds the corners of your windows
 kde-misc/lightly 9999: A window decoration for KDE
 mail-client/birdtray 1.6 9999: Run Thunderbird with a system tray icon.
 media-gfx/blockbench-bin 3.6.6: A boxy 3D model editor
-media-sound/botamusique 7.2 9999: Bot to play youtube/soundcloud/radio/local music on Mumble.
+media-sound/botamusique 7.2-r1 9999: Bot to play youtube/soundcloud/radio/local music on Mumble.
 media-video/obs-glcapture 9999: GL capture for OBS
 net-im/discord-canary-bin 0.0.116: All-in-one voice and text chat for gamers - Canary branch
 net-im/matterbridge 1.21.0: Bridge between a vast array of instant messaging services
