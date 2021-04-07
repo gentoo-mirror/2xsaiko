@@ -14,3 +14,8 @@ KEYWORDS="~amd64 ~x86"
 DEPEND="media-gfx/sane-backends"
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+src_install() {
+	emake DESTDIR="${D}" STRIP="" COMPRESS="" install
+	einstalldocs
+}
