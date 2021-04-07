@@ -1,4 +1,4 @@
-DEFINED_PHASES=-
+DEFINED_PHASES=install
 DEPEND=media-gfx/sane-backends
 DESCRIPTION=Scanner Access Now Easy - universal driver for eSCL (Apple AirScan) and WSD
 EAPI=7
@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=media-gfx/sane-backends
 SLOT=0
 SRC_URI=https://github.com/alexpevzner/sane-airscan/archive/refs/tags/0.99.24.tar.gz -> sane-airscan-0.99.24.tar.gz
-_md5_=df64bf5579ad68f6796cdc0b6dbc90f0
+_md5_=510bc8b43cee2ac099aae2827286e5ab
