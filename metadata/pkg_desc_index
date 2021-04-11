@@ -24,8 +24,8 @@ app-shells/zsh-syntax-highlighting 0.6.0: Fish shell like syntax highlighting fo
 dev-games/aseprite 1.1.9: Animated sprite editor & pixel art tool
 dev-java/java-sdk-docs 14.0.2 15: Oracle's documentation bundle (including API) for Java SE
 dev-java/jetbrains-jre-bin 11.0.7 11.0.7-r1 11.0.9_p1 11.0.10: JetBrains JDK
-dev-java/openjdk 14.0.2_p12-r1 15.0.1_p9: Open source implementation of the Java programming language
-dev-java/openjdk-bin 14.0.2_p12-r1 15.0.1_p9: Prebuilt Java JDK binaries provided by AdoptOpenJDK
+dev-java/openjdk 14.0.2_p12-r1 15.0.1_p9 16_p14: Open source implementation of the Java programming language
+dev-java/openjdk-bin 14.0.2_p12-r1 15.0.1_p9 16_p36: Prebuilt Java JDK binaries provided by AdoptOpenJDK
 dev-libs/quazip 1.1: Simple C++ wrapper over Gilles Vollant's ZIP/UNZIP package
 dev-python/PGPy 0.5.3-r1: Pretty Good Privacy for Python
 dev-python/SQLAlchemy-Utils 0.36.8: Various utility functions for SQLAlchemy.
@@ -70,8 +70,8 @@ net-im/matterbridge 1.21.0: Bridge between a vast array of instant messaging ser
 net-misc/pterodactyl-daemon 0.6.13 1.0.1 1.1.0 1.1.2 1.2.3: Server control and management daemon for Pterodactyl Panel
 sys-process/bottom 0.5.3: A process/system monitor with a customizable interface and a multitude of features.
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
-virtual/jdk 14 15: Virtual for Java Development Kit (JDK)
-virtual/jre 14 15: Virtual for Java Runtime Environment (JRE)
+virtual/jdk 14 15 16: Virtual for Java Development Kit (JDK)
+virtual/jre 14 15 16: Virtual for Java Runtime Environment (JRE)
 www-apps/pterodactyl-panel 0.7.18 0.7.18-r1 1.0.3 1.0.3-r1 1.1.0 1.1.0-r1 1.1.1 1.2.2: An open-source game server management panel
 www-apps/pterodactyl-panel-common 0: Common files for pterodactyl-panel
 www-apps/pufferpanel 2.1.0: An open source game server management panel
