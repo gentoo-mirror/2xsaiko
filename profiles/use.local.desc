@@ -25,6 +25,7 @@ kde-misc/hello:decoration - Compile window decorations
 kde-misc/hello:effects - Compile window manager effects
 kde-misc/hello:style - Compile window style
 kde-misc/hello:theme - Install hello themes
+sci-electronics/ghdl:synth - Enable synthesis feature
 www-apps/srht-git:cron - use cronjob
 www-apps/srht-git:srht-builds - builds.sr.ht integration
 www-apps/srht-meta:billing - Enable billing support
