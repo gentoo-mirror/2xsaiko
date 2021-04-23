@@ -12,7 +12,7 @@ SRC_URI="https://cancel.fm/dl/${MY_FILE}"
 
 LICENSE="ripcord"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="-* ~amd64"
 IUSE="system-libs"
 
 DEPEND=""
