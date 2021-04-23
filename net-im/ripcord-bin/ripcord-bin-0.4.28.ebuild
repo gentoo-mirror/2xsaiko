@@ -76,7 +76,11 @@ src_unpack() {
 src_prepare() {
 	sed -i 's/Exec=Ripcord/Exec=ripcord/' Ripcord.desktop
 
-	patchelf --set-rpath /opt/ripcord/lib Ripcord
+	if use system-libs; then
+		patchelf --replace-needed libsodium.so.18 libsodium.so.23 Ripcord
+	else
+		patchelf --set-rpath /opt/ripcord/lib Ripcord
+	fi
 
 	default
 }
@@ -84,25 +88,18 @@ src_prepare() {
 src_install() {
 	dodir /opt/ripcord/
 
-	if use system-libs; then
-		cp -r \
-			Ripcord \
-			doc \
-			translations \
-			twemoji.ripdb \
-			"${ED}"/opt/ripcord/
+	cp -r \
+		Ripcord \
+		doc \
+		translations \
+		twemoji.ripdb \
+		"${ED}"/opt/ripcord/
 
-		dodir /opt/ripcord/lib
-		dosym ../../../usr/lib64/libsodium.so /opt/ripcord/lib/libsodium.so.18
-	else
+	if ! use system-libs; then
 		cp -r \
-			Ripcord \
-			doc \
 			lib \
 			plugins \
 			qt.conf \
-			translations \
-			twemoji.ripdb \
 			"${ED}"/opt/ripcord/
 	fi
 
