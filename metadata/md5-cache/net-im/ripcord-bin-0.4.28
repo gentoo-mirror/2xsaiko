@@ -1,0 +1,14 @@
+DEFINED_PHASES=install prepare unpack
+DESCRIPTION=A desktop chat client for Slack and Discord
+EAPI=7
+HOMEPAGE=https://cancel.fm/ripcord/
+INHERIT=desktop
+IUSE=system-libs
+KEYWORDS=~amd64
+LICENSE=ripcord
+RDEPEND=dev-libs/glib dev-libs/libbsd dev-libs/libpcre media-libs/libglvnd x11-libs/libX11 x11-libs/libXau x11-libs/libxcb x11-libs/libXdmcp system-libs? ( dev-libs/double-conversion dev-libs/icu dev-libs/libpcre2 dev-libs/libsodium dev-libs/openssl dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtmultimedia:5 dev-qt/qtnetwork:5 dev-qt/qtsvg:5 dev-qt/qtwebsockets:5 dev-qt/qtwidgets:5 media-gfx/graphite2 media-libs/flac media-libs/freetype media-libs/harfbuzz media-libs/libogg media-libs/libpng media-libs/libsndfile media-libs/libvorbis media-libs/opus media-sound/pulseaudio net-libs/libasyncns sys-apps/dbus sys-apps/tcp-wrappers sys-apps/util-linux x11-libs/libICE x11-libs/libSM x11-libs/libXext x11-libs/libXScrnSaver x11-libs/libXtst )
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://cancel.fm/dl/Ripcord-0.4.28-x86_64.AppImage
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28
+_md5_=6861c00f92533b7fdeb5fb8daf7c0e4f
