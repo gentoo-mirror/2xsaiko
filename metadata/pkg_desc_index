@@ -16,6 +16,7 @@ acct-user/srht-git 0 1: User account for git.sr.ht
 acct-user/srht-meta 0: User account for meta.sr.ht
 acct-user/srht-paste 0: User account for paste.sr.ht
 app-backup/backup-scripts 9999: Backup scripts based on borgbackup
+app-misc/klatexformula 4.1.0: Generates images from LaTeX equations.
 app-misc/mysql-workbench 8.0.22-r2 8.0.23: Unified visual tool for database architects, developers, and DBAs
 app-misc/structorizer-bin 3.30 3.30-r1: Tool for creation of Nassi-Schneiderman Diagrams
 app-shells/grmlzshrc 0.18.0: grml's zsh setup
