@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=virtual/latex-base >=sys-apps/texinfo-4.2-r5
+DESCRIPTION=A TikZ extension to manage common UML diagrams
+EAPI=7
+HOMEPAGE=https://perso.ensta-paris.fr/~kielbasi/tikzuml/
+INHERIT=latex-package
+KEYWORDS=~amd64 ~x86
+LICENSE=all-rights-reserved
+RDEPEND=dev-tex/pgf virtual/latex-base
+SLOT=0
+SRC_URI=https://perso.ensta-paris.fr/~kielbasi/tikzuml/var/files/src/tikzuml-v1.0-2016-03-29.tbz
+_eclasses_=latex-package	e5f296c98696dd02059bc6a5a03282e2
+_md5_=7b8cfc54f70c3321c07104226eeb1f5b
