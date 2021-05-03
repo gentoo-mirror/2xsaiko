@@ -53,9 +53,19 @@ get_package_name() {
 }
 
 update_package() {
+  new_versions=()
   while read version; do
     cp -n "$(get_template_path "$1")" "../$1/$(get_package_name "$1")-$version.ebuild"
+    new_versions+=("$version")
   done < <(collect_new "$2" "$3")
+
+  if [[ "${#new_versions[@]}" -gt 0 ]]; then
+    (
+      cd "../$1" && \
+        git add . && \
+        repoman commit -m "$1: ${new_versions[@]}"
+    )
+  fi
 }
 
 mkdir state
