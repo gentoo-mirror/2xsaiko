@@ -21,17 +21,13 @@ match_tag_prop() {
   [[ "$(tag_prop "$1" "$2")" == "$3" ]]
 }
 
-extract_versions() {
+parse_updates() {
   product=''
   channel=''
 
   while rdom; do
-    if \
-      [[ "${product}" = "$1" ]] &&
-      [[ "${channel}" = "$2" ]] &&
-      match_tag_id "$E" 'build'
-    then
-      tag_prop "$E" "$3"
+    if match_tag_id "$E" 'build'; then
+      printf 'version\t%s\t%s\t%s\n' "${product}" "${channel}" "$(tag_prop "$E" 'version')"
     elif match_tag_id "$E" 'channel'; then
       channel="$(tag_prop "$E" 'id')"
     elif match_tag_id "$E" '/channel'; then
@@ -41,43 +37,42 @@ extract_versions() {
     elif match_tag_id "$E" '/product'; then
       product=''
     fi
-  done
+  done < <(curl 'https://www.jetbrains.com/updates/updates.xml') | sort -u
 }
 
 collect_new() {
-  current="/tmp/$1-current-$RANDOM"
+  grep "$(printf 'version\t%s\t%s\t' "$1" "$2")" "${jb_updates_diff}" | cut -f4
+}
 
-  extract_versions "$2" "$3" "$4" < "${jb_updates}" | sort -u > "$current"
+get_template_path() {
+  echo "templates/$(get_package_name $1).ebuild.in"
+}
 
-  touch "state/$1"
-  comm -23 "$current" "state/$1"
+get_package_name() {
+  basename "$1"
+}
 
-  sort "state/$1" "$current" -muo "state/$1"
-  rm "$current"
+update_package() {
+  while read version; do
+    echo cp -n "$(get_template_path "$1")" "../$1/$(get_package_name "$1")-$version.ebuild"
+  done < <(collect_new "$2" "$3")
 }
 
 mkdir state
 
-jb_updates="/tmp/updates-$RANDOM.xml"
-wget -O "${jb_updates}" 'https://www.jetbrains.com/updates/updates.xml'
+jb_updates="/tmp/updates-$RANDOM.tsv"
+jb_updates_diff="/tmp/updates-diff-$RANDOM.tsv"
+parse_updates > "${jb_updates}"
+touch state/updates.tsv
+comm -23 "${jb_updates}" state/updates.tsv > "${jb_updates_diff}"
 
-while read version; do
-  cp -nv 'templates/idea-ultimate-bin.ebuild.in' "idea-ultimate-bin/idea-ultimate-bin-$version.ebuild"
-done < <(collect_new 'idea' 'IntelliJ IDEA' 'IC-IU-RELEASE-licensing-RELEASE' 'version')
+update_package dev-util/idea-ultimate-bin 'IntelliJ IDEA' 'IC-IU-RELEASE-licensing-RELEASE'
+update_package dev-util/clion-bin 'CLion' 'CL-RELEASE-licensing-RELEASE'
+update_package dev-util/pycharm-professional-bin 'PyCharm' 'PC-PY-RELEASE-licensing-RELEASE'
+update_package dev-util/rider-bin 'Rider' 'RD-RELEASE-licensing-RELEASE'
 
-while read version; do
-  cp -nv 'templates/clion-bin.ebuild.in' "clion-bin/clion-bin-$version.ebuild"
-done < <(collect_new 'clion' 'CLion' 'CL-RELEASE-licensing-RELEASE' 'version')
-
-while read version; do
-  cp -nv 'templates/pycharm-professional-bin.ebuild.in' "pycharm-professional-bin/pycharm-professional-bin-$version.ebuild"
-done < <(collect_new 'pycharm' 'PyCharm' 'PC-PY-RELEASE-licensing-RELEASE' 'version')
-
-while read version; do
-  cp -nv 'templates/rider-bin.ebuild.in' "rider-bin/rider-bin-$version.ebuild"
-done < <(collect_new 'rider' 'Rider' 'RD-RELEASE-licensing-RELEASE' 'version')
-
-rm "${jb_updates}"
+sort -muo state/updates.tsv "${jb_updates}" state/updates.tsv
+rm "${jb_updates}" "${jb_updates_diff}"
 
 git add state
 git commit -m "Auto updates - $(date)" state
