@@ -5,6 +5,7 @@
 		<email>java@gentoo.org</email>
 	</maintainer>
 	<maintainer type="person">
-		<email>gentoo@dblsaiko.net</email>
+		<email>me@dblsaiko.net</email>
+		<name>Marco Rebhan</name>
 	</maintainer>
 </pkgmetadata>

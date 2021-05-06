@@ -3,9 +3,8 @@
 
 EAPI=7
 
-_jdk_build="1196.3"
+_jdk_build="1398.1"
 MY_PV="${PV//\./_}"
-MY_PV="${MY_PV//_p/_}"
 
 DESCRIPTION="JetBrains JDK"
 HOMEPAGE="https://github.com/JetBrains/JetBrainsRuntime"
@@ -25,7 +24,4 @@ S="${WORKDIR}/jbrsdk"
 src_install() {
 	dodir "/usr/lib/jvm/${PN}"
 	cp -pRP * "${ED}/usr/lib/jvm/${PN}"
-
-	insinto "/etc/profile.d"
-	newins "${FILESDIR}/jbrsdk-r1.sh" jbrsdk.sh
 }
