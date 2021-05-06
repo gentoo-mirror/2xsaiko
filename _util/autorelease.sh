@@ -59,11 +59,11 @@ update_package() {
     new_versions+=("$version")
   done < <(collect_new "$2" "$3")
 
-  if [[ "${#new_versions[@]}" -gt 0 ]]; then
+  if [[ "${AR_NOAUTOCOMMIT}" -eq 0 ]] && [[ "${#new_versions[@]}" -gt 0 ]]; then
     (
       cd "../$1" && \
         git add . && \
-        repoman commit -m "$1: ${new_versions[@]}"
+        repoman commit -m "$1: $(echo "${new_versions[@]}")"
     )
   fi
 }
@@ -81,6 +81,7 @@ update_package dev-util/clion-bin 'CLion' 'CL-RELEASE-licensing-RELEASE'
 update_package dev-util/pycharm-professional-bin 'PyCharm' 'PC-PY-RELEASE-licensing-RELEASE'
 update_package dev-util/rider-bin 'Rider' 'RD-RELEASE-licensing-RELEASE'
 update_package dev-util/webstorm-bin 'WebStorm' 'WS-RELEASE-licensing-RELEASE'
+update_package dev-db/datagrip-bin 'DataGrip' 'DB-RELEASE-licensing-RELEASE'
 
 sort -muo state/updates.tsv "${jb_updates}" state/updates.tsv
 rm "${jb_updates}" "${jb_updates_diff}"
