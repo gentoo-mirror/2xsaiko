@@ -6,7 +6,7 @@ inherit jetbrains-ide
 
 DESCRIPTION=".NET IDE"
 HOMEPAGE="https://www.jetbrains.com/rider/"
-SRC_URI="https://download.jetbrains.com/rider/JetBrains.Rider-${PV}.tar.gz"
+SRC_URI="https://download.jetbrains.com/rider/JetBrains.Rider-2020.1.0.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
