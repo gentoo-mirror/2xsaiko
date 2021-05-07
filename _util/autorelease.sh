@@ -83,6 +83,7 @@ update_package dev-util/idea-ultimate-bin 'IntelliJ IDEA' 'IC-IU-RELEASE-licensi
 update_package dev-util/phpstorm-bin 'PhpStorm' 'PS-RELEASE-licensing-RELEASE'
 update_package dev-util/pycharm-professional-bin 'PyCharm' 'PC-PY-RELEASE-licensing-RELEASE'
 update_package dev-util/rider-bin 'Rider' 'RD-RELEASE-licensing-RELEASE'
+update_package dev-util/rubymine-bin 'RubyMine' 'RM-RELEASE-licensing-RELEASE'
 update_package dev-util/webstorm-bin 'WebStorm' 'WS-RELEASE-licensing-RELEASE'
 
 sort -muo state/updates.tsv "${jb_updates}" state/updates.tsv
