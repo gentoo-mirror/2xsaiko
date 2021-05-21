@@ -68,6 +68,7 @@ version	AppCode	OC-RELEASE-licensing-RELEASE	2020.3.3
 version	AppCode	OC-RELEASE-licensing-RELEASE	2020.3.4
 version	AppCode	OC-RELEASE-licensing-RELEASE	2020.3.5
 version	AppCode	OC-RELEASE-licensing-RELEASE	2021.1
+version	AppCode	OC-RELEASE-licensing-RELEASE	2021.1.1
 version	AppCode	appcode_20	2.1.3
 version	AppCode	appcode_25	2.5.6
 version	AppCode	appcode_3	3.0.7
@@ -253,6 +254,7 @@ version	IntelliJ IDEA	IC-IU-EAP-licensing-RELEASE	2020.3.4 RC
 version	IntelliJ IDEA	IC-IU-EAP-licensing-RELEASE	2021.1 RC
 version	IntelliJ IDEA	IC-IU-EAP-licensing-RELEASE	2021.1.1 Preview
 version	IntelliJ IDEA	IC-IU-EAP-licensing-RELEASE	2021.1.1 RC
+version	IntelliJ IDEA	IC-IU-EAP-licensing-RELEASE	2021.1.2 Preview
 version	IntelliJ IDEA	IC-IU-RELEASE-licensing-RELEASE	2016.1.4
 version	IntelliJ IDEA	IC-IU-RELEASE-licensing-RELEASE	2016.2.5
 version	IntelliJ IDEA	IC-IU-RELEASE-licensing-RELEASE	2016.3.8
@@ -331,6 +333,7 @@ version	MPS	MPS-RELEASE-licensing-RELEASE	2019.3.7
 version	MPS	MPS-RELEASE-licensing-RELEASE	2020.1.7
 version	MPS	MPS-RELEASE-licensing-RELEASE	2020.2.3
 version	MPS	MPS-RELEASE-licensing-RELEASE	2020.3.3
+version	MPS	MPS-RELEASE-licensing-RELEASE	2021.1
 version	MPS	MPS-RELEASE-licensing-RELEASE	3.4.4
 version	MPS	MPS32	3.2.4
 version	MPS	MPS33	3.3.5
@@ -340,6 +343,7 @@ version	PhpStorm	PS-EAP-licensing-RELEASE	2020.3.2 Preview
 version	PhpStorm	PS-EAP-licensing-RELEASE	2020.3.2 RC
 version	PhpStorm	PS-EAP-licensing-RELEASE	2021.1 RC
 version	PhpStorm	PS-EAP-licensing-RELEASE	2021.1.2 Preview
+version	PhpStorm	PS-EAP-licensing-RELEASE	2021.1.3 Preview
 version	PhpStorm	PS-RELEASE-licensing-RELEASE	2016.1.2
 version	PhpStorm	PS-RELEASE-licensing-RELEASE	2016.2.2
 version	PhpStorm	PS-RELEASE-licensing-RELEASE	2016.3.4
@@ -405,6 +409,7 @@ version	PyCharm	PC-PY-EAP-licensing-RELEASE	2020.3.3 RC
 version	PyCharm	PC-PY-EAP-licensing-RELEASE	2020.3.4 RC
 version	PyCharm	PC-PY-EAP-licensing-RELEASE	2021.1 RC
 version	PyCharm	PC-PY-EAP-licensing-RELEASE	2021.1.1 RC
+version	PyCharm	PC-PY-EAP-licensing-RELEASE	2021.1.2 RC
 version	PyCharm	PC-PY-RELEASE-licensing-RELEASE	2016.1.5
 version	PyCharm	PC-PY-RELEASE-licensing-RELEASE	2016.2.3
 version	PyCharm	PC-PY-RELEASE-licensing-RELEASE	2016.3.6
@@ -634,6 +639,7 @@ version	RubyMine	RM-EAP-licensing-RELEASE	2020.3.4 Preview
 version	RubyMine	RM-EAP-licensing-RELEASE	2020.3.4 RC
 version	RubyMine	RM-EAP-licensing-RELEASE	2021.1.1 Preview
 version	RubyMine	RM-EAP-licensing-RELEASE	2021.1.1 RC
+version	RubyMine	RM-EAP-licensing-RELEASE	2021.1.2 Preview
 version	RubyMine	RM-RELEASE-licensing-RELEASE	2016.1.2
 version	RubyMine	RM-RELEASE-licensing-RELEASE	2016.2.5
 version	RubyMine	RM-RELEASE-licensing-RELEASE	2016.3.4
