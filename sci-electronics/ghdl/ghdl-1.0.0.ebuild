@@ -3,7 +3,7 @@
 
 EAPI=7
 
-ADA_COMPAT=(gnat_2017 gnat_2018 gnat_2019)
+ADA_COMPAT=(gnat_2017 gnat_2018 gnat_2019 gnat_2020)
 inherit ada multilib
 
 DESCRIPTION="VHDL 2008/93/87 simulator"
@@ -15,9 +15,11 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="synth"
 
-DEPEND=""
+DEPEND="${ADA_DEPS}"
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+REQUIRED_USE="${ADA_REQUIRED_USE}"
 
 src_prepare() {
 	default
