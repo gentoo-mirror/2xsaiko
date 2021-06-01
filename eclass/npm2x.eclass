@@ -3,9 +3,9 @@
 
 # @ECLASS: npm2x.eclass
 # @MAINTAINER:
-# 2xsaiko <git@dblsaiko.net>
+# 2xsaiko <me@dblsaiko.net>
 # @AUTHOR:
-# 2xsaiko <git@dblsaiko.net>
+# 2xsaiko <me@dblsaiko.net>
 # @BLURB: handle packages that need to be installed using npm install
 # @DESCRIPTION:
 # 
