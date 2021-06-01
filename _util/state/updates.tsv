@@ -83,6 +83,7 @@ version	CLion	CL-EAP-licensing-EAP	2020.3 Beta
 version	CLion	CL-EAP-licensing-EAP	2020.3 EAP
 version	CLion	CL-EAP-licensing-EAP	2021.1 Beta
 version	CLion	CL-EAP-licensing-EAP	2021.1 EAP
+version	CLion	CL-EAP-licensing-EAP	2021.2 EAP
 version	CLion	CL-RELEASE-licensing-RELEASE	2016.1.4
 version	CLion	CL-RELEASE-licensing-RELEASE	2016.2.3
 version	CLion	CL-RELEASE-licensing-RELEASE	2016.3.6
@@ -131,6 +132,7 @@ version	CLion	CL-RELEASE-licensing-RELEASE	2020.3.3
 version	CLion	CL-RELEASE-licensing-RELEASE	2020.3.4
 version	CLion	CL-RELEASE-licensing-RELEASE	2021.1
 version	CLion	CL-RELEASE-licensing-RELEASE	2021.1.1
+version	CLion	CL-RELEASE-licensing-RELEASE	2021.1.2
 version	CLion	clion_11	1.1.2
 version	CLion	clion_12	1.2.5
 version	DataGrip	DB-RELEASE-licensing-RELEASE	2016.1.2
@@ -179,6 +181,7 @@ version	DataGrip	DB-RELEASE-licensing-RELEASE	2020.3.1
 version	DataGrip	DB-RELEASE-licensing-RELEASE	2020.3.2
 version	DataGrip	DB-RELEASE-licensing-RELEASE	2021.1
 version	DataGrip	DB-RELEASE-licensing-RELEASE	2021.1.1
+version	DataGrip	DB-RELEASE-licensing-RELEASE	2021.1.2
 version	DataGrip	datagrip_1	1.0.5
 version	GoLand	GO-EAP-licensing-EAP	2020.1 Beta
 version	GoLand	GO-EAP-licensing-EAP	2020.1 EAP
@@ -194,6 +197,7 @@ version	GoLand	GO-EAP-licensing-EAP	2021.1 Beta 3
 version	GoLand	GO-EAP-licensing-EAP	2021.1 Beta 4
 version	GoLand	GO-EAP-licensing-EAP	2021.1 EAP
 version	GoLand	GO-EAP-licensing-EAP	2021.1 Release Candidate
+version	GoLand	GO-EAP-licensing-EAP	2021.2 EAP
 version	GoLand	GO-EAP-licensing-RELEASE	2020.3.1 Preview
 version	GoLand	GO-RELEASE-licensing-RELEASE	2017.3.5
 version	GoLand	GO-RELEASE-licensing-RELEASE	2018.1.8
@@ -243,6 +247,7 @@ version	IntelliJ IDEA	IC-IU-EAP-licensing-EAP	2019.2 BETA2
 version	IntelliJ IDEA	IC-IU-EAP-licensing-EAP	2019.2 EAP
 version	IntelliJ IDEA	IC-IU-EAP-licensing-EAP	2021.1 Beta
 version	IntelliJ IDEA	IC-IU-EAP-licensing-EAP	2021.1 EAP
+version	IntelliJ IDEA	IC-IU-EAP-licensing-EAP	2021.2 EAP
 version	IntelliJ IDEA	IC-IU-EAP-licensing-RELEASE	2018.3 Release Candidate
 version	IntelliJ IDEA	IC-IU-EAP-licensing-RELEASE	2019.1.4 Preview
 version	IntelliJ IDEA	IC-IU-EAP-licensing-RELEASE	2019.1.4 RC
@@ -291,6 +296,7 @@ version	IntelliJ IDEA	IC-IU-RELEASE-licensing-RELEASE	2020.3.3
 version	IntelliJ IDEA	IC-IU-RELEASE-licensing-RELEASE	2020.3.4
 version	IntelliJ IDEA	IC-IU-RELEASE-licensing-RELEASE	2021.1
 version	IntelliJ IDEA	IC-IU-RELEASE-licensing-RELEASE	2021.1.1
+version	IntelliJ IDEA	IC-IU-RELEASE-licensing-RELEASE	2021.1.2
 version	IntelliJ IDEA	IDEA12	12.1.8
 version	IntelliJ IDEA	IDEA13	13.0.5
 version	IntelliJ IDEA	IDEA13.1	13.1.7
@@ -320,6 +326,7 @@ version	IntelliJ IDEA Edu	IE-RELEASE-licensing-RELEASE	2020.3.2
 version	IntelliJ IDEA Edu	IE-RELEASE-licensing-RELEASE	2020.3.3
 version	IntelliJ IDEA Edu	IE-RELEASE-licensing-RELEASE	2020.3.4
 version	IntelliJ IDEA Edu	IE-RELEASE-licensing-RELEASE	2021.1
+version	IntelliJ IDEA Edu	IE-RELEASE-licensing-RELEASE	2021.1.1
 version	JetBrains DS	PD-EAP-licensing-EAP	2021.1 EAP
 version	JetBrains DS	PD-EAP-licensing-EAP	2021.2 EAP
 version	MPS	MPS-EAP-licensing-RELEASE	2021.1-RC1 EAP
@@ -335,6 +342,7 @@ version	MPS	MPS-RELEASE-licensing-RELEASE	2019.3.7
 version	MPS	MPS-RELEASE-licensing-RELEASE	2020.1.7
 version	MPS	MPS-RELEASE-licensing-RELEASE	2020.2.3
 version	MPS	MPS-RELEASE-licensing-RELEASE	2020.3.3
+version	MPS	MPS-RELEASE-licensing-RELEASE	2020.3.4
 version	MPS	MPS-RELEASE-licensing-RELEASE	2021.1
 version	MPS	MPS-RELEASE-licensing-RELEASE	3.4.4
 version	MPS	MPS32	3.2.4
@@ -504,6 +512,7 @@ version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	2020.3.2
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	2020.3.3
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	2020.3.4
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	2021.1
+version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	2021.1.1
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	3.0.1
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	3.5.1
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	4.0.2
@@ -543,6 +552,7 @@ version	Rider	RD-EAP-licensing-EAP	2021.1-EAP6 EAP
 version	Rider	RD-EAP-licensing-EAP	2021.1-EAP7 EAP
 version	Rider	RD-EAP-licensing-EAP	2021.1-EAP8 EAP
 version	Rider	RD-EAP-licensing-EAP	2021.1-EAP9 Beta
+version	Rider	RD-EAP-licensing-EAP	2021.2-EAP1 EAP
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.1.2
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.2.1
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.3.1
@@ -601,6 +611,7 @@ version	Rider for Unreal Engine	RDCPPP-RELEASE-licensing-RELEASE	2020.3.3
 version	Rider for Unreal Engine	RDCPPP-RELEASE-licensing-RELEASE	2020.3.4
 version	Rider for Unreal Engine	RDCPPP-RELEASE-licensing-RELEASE	2021.1
 version	Rider for Unreal Engine	RDCPPP-RELEASE-licensing-RELEASE	2021.1.1
+version	Rider for Unreal Engine	RDCPPP-RELEASE-licensing-RELEASE	2021.1.2
 version	RubyMine	RM-EAP-licensing-EAP	2020.1 Beta
 version	RubyMine	RM-EAP-licensing-EAP	2020.1 EAP
 version	RubyMine	RM-EAP-licensing-EAP	2020.1 RC
@@ -613,6 +624,7 @@ version	RubyMine	RM-EAP-licensing-EAP	2020.3 RC
 version	RubyMine	RM-EAP-licensing-EAP	2021.1 BETA
 version	RubyMine	RM-EAP-licensing-EAP	2021.1 EAP
 version	RubyMine	RM-EAP-licensing-EAP	2021.1 RC
+version	RubyMine	RM-EAP-licensing-EAP	2021.2 EAP
 version	RubyMine	RM-EAP-licensing-RELEASE	2019.3.3 Preview
 version	RubyMine	RM-EAP-licensing-RELEASE	2019.3.3 RC
 version	RubyMine	RM-EAP-licensing-RELEASE	2019.3.4 Preview
@@ -709,6 +721,7 @@ version	WebStorm	WS-EAP-licensing-EAP	2020.3 Beta
 version	WebStorm	WS-EAP-licensing-EAP	2020.3 EAP
 version	WebStorm	WS-EAP-licensing-EAP	2021.1 Beta
 version	WebStorm	WS-EAP-licensing-EAP	2021.1 EAP
+version	WebStorm	WS-EAP-licensing-EAP	2021.2 EAP
 version	WebStorm	WS-EAP-licensing-RELEASE	2019.3.2 RC
 version	WebStorm	WS-EAP-licensing-RELEASE	2019.3.3 RC
 version	WebStorm	WS-EAP-licensing-RELEASE	2019.3.4 RC
@@ -776,6 +789,7 @@ version	WebStorm	WS-RELEASE-licensing-RELEASE	2020.3.2
 version	WebStorm	WS-RELEASE-licensing-RELEASE	2020.3.3
 version	WebStorm	WS-RELEASE-licensing-RELEASE	2021.1
 version	WebStorm	WS-RELEASE-licensing-RELEASE	2021.1.1
+version	WebStorm	WS-RELEASE-licensing-RELEASE	2021.1.2
 version	WebStorm	WS10	10.0.5
 version	WebStorm	WS11	11.0.4
 version	WebStorm	WS6	6.0.3
