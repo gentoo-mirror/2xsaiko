@@ -10,7 +10,7 @@
 		<name>Proxy Maintainers</name>
 	</maintainer>
 	<maintainer type="person">
-		<email>gentoo@dblsaiko.net</email>
+		<email>me@dblsaiko.net</email>
 	</maintainer>
 	<use>
 		<flag name="bundled-libs">Use the upstream provided bundled version of allegro 4.4.2</flag>
