@@ -39,7 +39,7 @@ dev-python/click-didyoumean 0.0.3: Enable git-like did-you-mean feature in click
 dev-python/click-repl 0.1.6: Subcommand REPL for click apps
 dev-python/emailthreads 0.1.3: Parses email threads into conversation trees
 dev-python/kombu 5.0.2: AMQP Messaging Framework for Python
-dev-python/minio 5.0.10 5.0.10-r1 5.0.10-r2: MinIO Python Library for Amazon S3 Compatible Cloud Storage for Python
+dev-python/minio 5.0.10-r2: MinIO Python Library for Amazon S3 Compatible Cloud Storage for Python
 dev-python/mistletoe 0.7.2: A fast, extensible Markdown parser in pure Python.
 dev-python/opuslib 3.0.1: Python bindings to the libopus, IETF low-delay audio codec
 dev-python/py-amqp 5.0.2: Low-level AMQP client for Python (fork of amqplib)
