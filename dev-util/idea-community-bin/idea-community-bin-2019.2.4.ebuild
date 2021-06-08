@@ -4,16 +4,16 @@
 EAPI=7
 inherit jetbrains-ide
 
-DESCRIPTION="Intelligent Java IDE"
+DESCRIPTION="Intelligent Java IDE - Community Edition"
 HOMEPAGE="https://www.jetbrains.com/idea/"
-SRC_URI="https://download.jetbrains.com/idea/ideaIU-${PV}-no-jbr.tar.gz"
+SRC_URI="https://download.jetbrains.com/idea/ideaIC-${PV}-no-jbr.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-IDE_FULL_NAME="IntelliJ IDEA Ultimate"
+IDE_FULL_NAME="IntelliJ IDEA Community"
 IDE_BIN_NAME="idea"
-IDE_DIST_NAME="idea-IU"
+IDE_DIST_NAME="idea-IC"
 IDE_DIST_VERSION="any"

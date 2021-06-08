@@ -13,15 +13,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-BDEPEND="dev-util/patchelf"
-
 IDE_FULL_NAME="IntelliJ IDEA Ultimate"
 IDE_BIN_NAME="idea"
 IDE_DIST_NAME="idea-IU"
 IDE_DIST_VERSION="any"
-
-src_prepare() {
-	patchelf --replace-needed liblldb.so.9 liblldb.so "${S}"/plugins/Kotlin/bin/linux/LLDBFrontend || die "Unable to patch LLDBFrontend for lldb"
-
-	jetbrains-ide_src_prepare
-}
