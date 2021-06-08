@@ -136,6 +136,7 @@ version	CLion	CL-RELEASE-licensing-RELEASE	2021.1.1
 version	CLion	CL-RELEASE-licensing-RELEASE	2021.1.2
 version	CLion	clion_11	1.1.2
 version	CLion	clion_12	1.2.5
+version	DataGrip	DB-EAP-licensing-EAP	2021.2 EAP
 version	DataGrip	DB-RELEASE-licensing-RELEASE	2016.1.2
 version	DataGrip	DB-RELEASE-licensing-RELEASE	2016.2.6
 version	DataGrip	DB-RELEASE-licensing-RELEASE	2016.3.4
@@ -350,6 +351,7 @@ version	MPS	MPS32	3.2.4
 version	MPS	MPS33	3.3.5
 version	PhpStorm	PS-EAP-licensing-EAP	2021.1 Beta
 version	PhpStorm	PS-EAP-licensing-EAP	2021.1 EAP
+version	PhpStorm	PS-EAP-licensing-EAP	2021.2 EAP
 version	PhpStorm	PS-EAP-licensing-RELEASE	2020.3.2 Preview
 version	PhpStorm	PS-EAP-licensing-RELEASE	2020.3.2 RC
 version	PhpStorm	PS-EAP-licensing-RELEASE	2021.1 RC
@@ -412,6 +414,7 @@ version	PhpStorm	WI9	9.0.3
 version	PyCharm	PC-PY-EAP-licensing-EAP	2020.2 EAP
 version	PyCharm	PC-PY-EAP-licensing-EAP	2020.3 EAP
 version	PyCharm	PC-PY-EAP-licensing-EAP	2021.1 EAP
+version	PyCharm	PC-PY-EAP-licensing-EAP	2021.2 EAP
 version	PyCharm	PC-PY-EAP-licensing-RELEASE	2020.1.4 RC
 version	PyCharm	PC-PY-EAP-licensing-RELEASE	2020.2.1 RC
 version	PyCharm	PC-PY-EAP-licensing-RELEASE	2020.2.2 RC
@@ -556,6 +559,7 @@ version	Rider	RD-EAP-licensing-EAP	2021.1-EAP7 EAP
 version	Rider	RD-EAP-licensing-EAP	2021.1-EAP8 EAP
 version	Rider	RD-EAP-licensing-EAP	2021.1-EAP9 Beta
 version	Rider	RD-EAP-licensing-EAP	2021.2-EAP1 EAP
+version	Rider	RD-EAP-licensing-EAP	2021.2-EAP2 EAP
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.1.2
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.2.1
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.3.1
