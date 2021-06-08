@@ -55,7 +55,7 @@ get_package_name() {
 update_package() {
   new_versions=()
   while read version; do
-    cp -n "$(get_template_path "$1")" "../$1/$(get_package_name "$1")-$version.ebuild"
+    cp -vn "$(get_template_path "$1")" "../$1/$(get_package_name "$1")-$version.ebuild"
     new_versions+=("$version")
   done < <(collect_new "$2" "$3")
 
@@ -79,6 +79,7 @@ comm -23 "${jb_updates}" state/updates.tsv > "${jb_updates_diff}"
 update_package dev-db/datagrip-bin 'DataGrip' 'DB-RELEASE-licensing-RELEASE'
 update_package dev-util/clion-bin 'CLion' 'CL-RELEASE-licensing-RELEASE'
 update_package dev-util/goland-bin 'GoLand' 'GO-RELEASE-licensing-RELEASE'
+update_package dev-util/idea-community-bin 'IntelliJ IDEA' 'IC-IU-RELEASE-licensing-RELEASE'
 update_package dev-util/idea-ultimate-bin 'IntelliJ IDEA' 'IC-IU-RELEASE-licensing-RELEASE'
 update_package dev-util/phpstorm-bin 'PhpStorm' 'PS-RELEASE-licensing-RELEASE'
 update_package dev-util/pycharm-professional-bin 'PyCharm' 'PC-PY-RELEASE-licensing-RELEASE'
