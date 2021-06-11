@@ -8,7 +8,7 @@ DESCRIPTION="Python IDE for Professional Developers - Community Edition"
 HOMEPAGE="https://www.jetbrains.com/pycharm/"
 SRC_URI="https://download.jetbrains.com/python/pycharm-community-${PV}-no-jbr.tar.gz"
 
-LICENSE="all-rights-reserved"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
