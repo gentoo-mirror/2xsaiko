@@ -11,5 +11,5 @@ RDEPEND=>=dev-db/mariadb-10.2:* dev-db/redis >=dev-lang/php-7.3:*[cli,ssl,gd,mys
 RESTRICT=network-sandbox
 SLOT=0.7.18
 SRC_URI=https://github.com/pterodactyl/panel/archive/v0.7.18.tar.gz
-_eclasses_=webapp	990ad6a000cf18d1ef87117e8c7b0a54
+_eclasses_=webapp	cd327e73cdb307ceb80dcca6b8ad8b52
 _md5_=38f484bf10aa5f1b9111bfb3fc29f5b4
