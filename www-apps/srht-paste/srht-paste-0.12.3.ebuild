@@ -1,4 +1,4 @@
-# Copyright 2020 Gentoo Authors
+# Copyright 2020-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -41,16 +41,8 @@ src_install() {
 	newconfd "${FILESDIR}/srht-paste.conf" srht-paste
 }
 
-pkg_preinst() {
-	if has_version "${CATEGORY}/${PN}"; then
-		OLD_SRHT_VERSION=1
-	fi
-}
-
 pkg_postinst() {
-	if [[ -n "$OLD_SRHT_VERSION" ]]; then
-		elog 'Upgrading database...'
-		srht-migrate paste.sr.ht -a upgrade head
-		pastesrht-migrate -a upgrade head
-	fi
+	elog 'Upgrading database...'
+	srht-migrate paste.sr.ht -a upgrade head
+	pastesrht-migrate -a upgrade head
 }
