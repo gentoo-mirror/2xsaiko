@@ -88,8 +88,8 @@ virtual/jre 14 15 16: Virtual for Java Runtime Environment (JRE)
 www-apps/pterodactyl-panel 0.7.18 0.7.18-r1 1.0.3 1.0.3-r1 1.1.0 1.1.0-r1 1.1.1 1.2.2: An open-source game server management panel
 www-apps/pterodactyl-panel-common 0: Common files for pterodactyl-panel
 www-apps/pufferpanel 2.1.0: An open source game server management panel
-www-apps/srht-git 0.62.0 0.62.0-r1 0.62.2 0.62.6: sr.ht git services
+www-apps/srht-git 0.72.34: sr.ht git services
 www-apps/srht-meta 0.54.0: sr.ht core account services
-www-apps/srht-paste 0.11.2 0.11.2-r1 0.11.2-r2 0.11.3: sr.ht pastebin services
+www-apps/srht-paste 0.12.3: sr.ht pastebin services
 www-servers/jellyfin-bin 10.6.4-r1: The Free Software Media System - prebuilt binaries
 x11-apps/xcur2png 9999: Convert Xcur format to PNG
