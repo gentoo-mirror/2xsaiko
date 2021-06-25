@@ -762,6 +762,7 @@ DEPEND="
 	dev-lang/sassc"
 RDEPEND="${DEPEND}
 	dev-python/bcrypt
+	dev-python/dnspython
 	dev-python/prometheus_client
 	dev-python/PGPy
 	dev-python/pystache
