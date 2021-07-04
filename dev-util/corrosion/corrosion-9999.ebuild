@@ -1,4 +1,4 @@
-# Copyright 2020 Gentoo Authors
+# Copyright 2020-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -7,7 +7,7 @@ inherit git-r3 cmake cargo
 
 DESCRIPTION="Use Rust in CMake projects"
 HOMEPAGE="https://github.com/AndrewGaspar/corrosion"
-SRC_URI="$(cargo_crate_uris ${CRATES})"
+#SRC_URI="$(cargo_crate_uris ${CRATES})"
 EGIT_REPO_URI="https://github.com/AndrewGaspar/corrosion"
 
 LICENSE="MIT"
