@@ -6,7 +6,7 @@ inherit jetbrains-ide
 
 DESCRIPTION="Intelligent Java IDE"
 HOMEPAGE="https://www.jetbrains.com/idea/"
-SRC_URI="https://download.jetbrains.com/idea/ideaIU-${PV}-no-jbr.tar.gz"
+SRC_URI="https://download.jetbrains.com/idea/ideaIU-${PV}-no-jbr.tar.gz -> ideaIU-${PV}-no-jbr-r1.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
