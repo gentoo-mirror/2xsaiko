@@ -15,6 +15,8 @@ DEPEND="media-gfx/sane-backends"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+PATCHES=("${FILESDIR}/fix-makefile.patch")
+
 src_install() {
 	emake DESTDIR="${D}" STRIP="" COMPRESS="" install
 	einstalldocs

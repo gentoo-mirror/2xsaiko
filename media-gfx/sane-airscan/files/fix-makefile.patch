@@ -1,0 +1,23 @@
+--- a/Makefile	2021-08-17 00:28:39.101417379 +0200
++++ b/Makefile	2021-08-17 00:33:01.142747239 +0200
+@@ -27,12 +27,15 @@
+ #   mandir       $(datarootdir)/man  $(datarootdir)/man
+ #
+ 
++ifeq ($(origin CC),default)
+ CC		= gcc
+-COMPRESS 	= gzip -n
+-CFLAGS		+= -O2 -g -W -Wall -Werror -pthread $(CPPFLAGS)
+-PKG_CONFIG 	= pkg-config
+-STRIP 		= -s
+-INSTALL 	= install
++endif
++COMPRESS 	?= gzip -n
++CFLAGS		?= -O2 -g
++CFLAGS		+= -W -Wall -Werror -pthread
++PKG_CONFIG 	?= pkg-config
++STRIP 		?= -s
++INSTALL 	?= install
+ 
+ ifeq "$(shell uname -s)" "Linux"
+     prefix	?= /usr
