@@ -17,7 +17,7 @@ SRC_URI="https://github.com/openjdk/${MY_PROJ}/archive/refs/tags/jdk-${MY_PV}.ta
 LICENSE="GPL-2"
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc64"
 
-IUSE="alsa clang cups debug doc examples gentoo-vm headless-awt javafx +jbootstrap +pch selinux source systemtap"
+IUSE="alsa cups debug doc examples gentoo-vm headless-awt javafx +jbootstrap +pch selinux source systemtap"
 
 COMMON_DEPEND="
 	media-libs/freetype:2=
@@ -50,10 +50,6 @@ RDEPEND="
 
 DEPEND="
 	${COMMON_DEPEND}
-	clang? (
-		sys-devel/clang
-		sys-devel/lld
-	)
 	app-arch/zip
 	media-libs/alsa-lib
 	net-print/cups
@@ -142,35 +138,6 @@ src_configure() {
 	# Work around stack alignment issue, bug #647954. in case we ever have x86
 	use x86 && append-flags -mincoming-stack-boundary=2
 
-	local have_switched_compiler=
-	if use clang && ! tc-is-clang; then
-		# Force clang
-		einfo "Enforcing the use of clang due to USE=clang ..."
-		have_switched_compiler=yes
-		AR=llvm-ar
-		CC=${CHOST}-clang
-		CXX=${CHOST}-clang++
-		NM=llvm-nm
-		RANLIB=llvm-ranlib
-	elif ! use clang && ! tc-is-gcc; then
-		# Force gcc
-		have_switched_compiler=yes
-		einfo "Enforcing the use of gcc due to USE=-clang ..."
-		AR=gcc-ar
-		CC=${CHOST}-gcc
-		CXX=${CHOST}-g++
-		NM=gcc-nm
-		RANLIB=gcc-ranlib
-	fi
-
-	if [[ -n "${have_switched_compiler}" ]]; then
-		# Because we have switched active compiler we have to ensure
-		# that no unsupported flags are set
-		strip-unsupported-flags
-	fi
-
-	tc-export CC CXX LD AR NM OBJDUMP RANLIB PKG_CONFIG
-
 	# Work around -fno-common ( GCC10 default ), bug #713180
 	append-flags -fcommon
 
@@ -202,10 +169,6 @@ src_configure() {
 		--enable-dtrace=$(usex systemtap yes no)
 		--enable-headless-only=$(usex headless-awt yes no)
 	)
-
-	if use clang; then
-		myconf+=( --with-toolchain-type=clang )
-	fi
 
 	# if use javafx; then
 	# 	local zip="${EROOT%/}/usr/$(get_libdir)/openjfx-${SLOT}/javafx-exports.zip"
