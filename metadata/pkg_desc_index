@@ -26,7 +26,7 @@ dev-db/mysql-workbench 8.0.22-r2 8.0.23: Unified visual tool for database archit
 dev-games/aseprite 1.1.9: Animated sprite editor & pixel art tool
 dev-java/java-sdk-docs 14.0.2 15: Oracle's documentation bundle (including API) for Java SE
 dev-java/jetbrains-jre-bin 11.0.10-r1: JetBrains JDK
-dev-java/openjdk 14.0.2_p12-r1 15.0.1_p9 16.0.1_p9: Open source implementation of the Java programming language
+dev-java/openjdk 14.0.2_p12-r1 15.0.1_p9 16.0.2_p7: Open source implementation of the Java programming language
 dev-java/openjdk-bin 14.0.2_p12-r1 15.0.1_p9 16.0.1_p9: Prebuilt Java JDK binaries provided by AdoptOpenJDK
 dev-libs/quazip 1.1: Simple C++ wrapper over Gilles Vollant's ZIP/UNZIP package
 dev-python/PGPy 0.5.3-r1: Pretty Good Privacy for Python
