@@ -22,6 +22,7 @@ IUSE="alsa cups debug doc examples gentoo-vm headless-awt javafx +jbootstrap +pc
 COMMON_DEPEND="
 	media-libs/freetype:2=
 	media-libs/giflib:0/7
+	media-libs/harfbuzz:=
 	media-libs/libpng:0=
 	media-libs/lcms:2=
 	sys-libs/zlib
@@ -152,7 +153,9 @@ src_configure() {
 		--with-extra-cflags="${CFLAGS}"
 		--with-extra-cxxflags="${CXXFLAGS}"
 		--with-extra-ldflags="${LDFLAGS}"
+		--with-freetype=system
 		--with-giflib=system
+		--with-harfbuzz=system
 		--with-lcms=system
 		--with-libjpeg=system
 		--with-libpng=system
@@ -168,6 +171,7 @@ src_configure() {
 		--with-zlib=system
 		--enable-dtrace=$(usex systemtap yes no)
 		--enable-headless-only=$(usex headless-awt yes no)
+		$(tc-is-clang && echo "--with-toolchain-type=clang")
 	)
 
 	# if use javafx; then
