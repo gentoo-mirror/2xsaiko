@@ -5,7 +5,6 @@
 app-backup/backup-scripts:cron - Install a daily cron script to back up the system.
 dev-games/aseprite:bundled-libs - Use the upstream provided bundled version of allegro 4.4.2
 dev-games/aseprite:gtk3 - Enable support for the experimental native GTK File Dialog
-dev-java/openjdk:clang - Use Clang compiler instead of GCC
 dev-java/openjdk:gentoo-vm - Allow this JDK to be recognised by Gentoo (package manager, eselect, java-config, EXPERIMENTAL!)
 dev-java/openjdk:headless-awt - Don't install the X backend for AWT, needed by some GUIs
 dev-java/openjdk:javafx - Import OpenJFX modules at build time, via dev-java/openjfx
