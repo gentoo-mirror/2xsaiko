@@ -24,7 +24,8 @@ DEPEND="
 	>=dev-qt/qtsensors-${QTMIN}:5
 	>=kde-frameworks/kdbusaddons-${KFMIN}
 	>=kde-frameworks/kdeclarative-${KFMIN}
-	>=kde-frameworks/ki18n-${KFMIN}"
+	>=kde-frameworks/ki18n-${KFMIN}
+	gui-libs/disman"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
