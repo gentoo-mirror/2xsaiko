@@ -1,9 +1,9 @@
-# Copyright 2019 Gentoo Authors
+# Copyright 2019-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-inherit git-r3 cmake-utils desktop
+inherit git-r3 cmake desktop
 
 DESCRIPTION="Free, open source launcher and instance manager for Minecraft."
 HOMEPAGE="https://multimc.org"
@@ -26,11 +26,11 @@ src_configure() {
 		-DMultiMC_LAYOUT=lin-system
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_install() {
-	cmake-utils_src_install
+	cmake_src_install
 
 	doicon "application/resources/multimc/scalable/multimc.svg"
 	domenu "application/package/linux/multimc.desktop"

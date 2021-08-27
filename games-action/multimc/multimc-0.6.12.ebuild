@@ -26,6 +26,10 @@ DEPEND="x11-apps/xrandr
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+PATCHES="
+	${FILESDIR}/3747.patch
+	${FILESDIR}/3a1abb555b844c79a80615727b11019403767ce7.patch"
+
 S="${WORKDIR}/MultiMC5-${PV}"
 
 src_unpack() {
