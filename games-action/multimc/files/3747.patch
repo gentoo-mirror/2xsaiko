@@ -1,0 +1,21 @@
+From c2fd714f8d77db3223c5cb1a2d7f902d3e3e73fd Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Trung=20L=C3=AA?= <trung.le@ruby-journal.com>
+Date: Thu, 29 Apr 2021 12:42:49 +1000
+Subject: [PATCH] Add limits header
+
+---
+ libraries/systeminfo/src/sys_unix.cpp | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/libraries/systeminfo/src/sys_unix.cpp b/libraries/systeminfo/src/sys_unix.cpp
+index ab3f302eb..42c0d3199 100644
+--- a/libraries/systeminfo/src/sys_unix.cpp
++++ b/libraries/systeminfo/src/sys_unix.cpp
+@@ -4,6 +4,7 @@
+ 
+ #include <sys/utsname.h>
+ #include <fstream>
++#include <limits>
+ 
+ Sys::KernelInfo Sys::getKernelInfo()
+ {
