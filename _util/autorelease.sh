@@ -72,7 +72,7 @@ mkdir state
 
 jb_updates="/tmp/updates-$RANDOM.tsv"
 jb_updates_diff="/tmp/updates-diff-$RANDOM.tsv"
-parse_updates > "${jb_updates}"
+parse_updates | LANG=C sort -u > "${jb_updates}"
 touch state/updates.tsv
 LANG=C comm -23 "${jb_updates}" state/updates.tsv > "${jb_updates_diff}"
 
@@ -88,7 +88,8 @@ update_package dev-util/rider-bin 'Rider' 'RD-RELEASE-licensing-RELEASE'
 update_package dev-util/rubymine-bin 'RubyMine' 'RM-RELEASE-licensing-RELEASE'
 update_package dev-util/webstorm-bin 'WebStorm' 'WS-RELEASE-licensing-RELEASE'
 
-LANG=C sort -muo state/updates.tsv "${jb_updates}" state/updates.tsv
+cp "${jb_updates}" fuck.tsv
+LANG=C sort -uo state/updates.tsv "${jb_updates}" state/updates.tsv
 rm "${jb_updates}" "${jb_updates_diff}"
 
 git add state
