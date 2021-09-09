@@ -1,3 +1,4 @@
+BDEPEND=app-arch/unzip
 DEFINED_PHASES=compile install
 DEPEND=media-libs/libicns
 DESCRIPTION=Tool for creation of Nassi-Schneiderman Diagrams
@@ -10,4 +11,4 @@ RDEPEND=>=virtual/jre-1.8
 SLOT=0
 SRC_URI=https://github.com/fesch/Structorizer.Desktop/releases/download/3.30-10/structorizer_3.30-10.zip
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28
-_md5_=c7bc078596eacbb748e309040478276a
+_md5_=630a6549577dede255b6bd5e1f2959c7
