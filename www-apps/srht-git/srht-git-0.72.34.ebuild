@@ -1068,7 +1068,7 @@ EGO_SUM=(
 go-module_set_globals
 
 SRC_URI="
-	https://git.sr.ht/~sircmpwn/${MY_PN}/archive/${PV}.tar.gz
+	https://git.sr.ht/~sircmpwn/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz
 	${EGO_SUM_SRC_URI}"
 
 LICENSE="AGPL-3"
