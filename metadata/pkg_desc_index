@@ -74,7 +74,6 @@ kde-misc/kde-shapecorners 9999: Rounds the corners of your windows
 kde-misc/lightly 9999: A window decoration for KDE
 kde-plasma/kdisplay 5.22.0: App and daemon for display managing
 kde-plasma/kwinft 5.22.0: Wayland compositor and X11 window manager
-mail-client/birdtray 1.6 9999: Run Thunderbird with a system tray icon.
 mail-filter/opendkim 2.11.0_p2: A milter providing DKIM signing and verification
 media-gfx/blockbench-bin 3.6.6: A boxy 3D model editor
 media-gfx/sane-airscan 0.99.26: Scanner Access Now Easy - universal driver for eSCL (Apple AirScan) and WSD
