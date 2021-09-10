@@ -3,11 +3,11 @@
 
 EAPI=7
 
-inherit git-r3 cmake-utils
+inherit git-r3 cmake
 
 DESCRIPTION="GL capture for OBS"
-HOMEPAGE="https://github.com/therealfarfetchd/obs-glcapture"
-EGIT_REPO_URI="https://github.com/therealfarfetchd/obs-glcapture"
+HOMEPAGE="https://github.com/2xsaiko/obs-glcapture"
+EGIT_REPO_URI="https://github.com/2xsaiko/obs-glcapture"
 
 LICENSE="MIT"
 SLOT="0"
