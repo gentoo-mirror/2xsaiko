@@ -10,7 +10,7 @@ MY_PN="paste.sr.ht"
 
 DESCRIPTION="sr.ht pastebin services"
 HOMEPAGE="https://git.sr.ht/~sircmpwn/paste.sr.ht"
-SRC_URI="https://git.sr.ht/~sircmpwn/${MY_PN}/archive/${PV}.tar.gz"
+SRC_URI="https://git.sr.ht/~sircmpwn/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="AGPL-3"
 SLOT="0"
