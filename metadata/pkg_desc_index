@@ -83,7 +83,7 @@ media-video/obs-glcapture 9999: GL capture for OBS
 net-im/discord-canary-bin 0.0.116: All-in-one voice and text chat for gamers - Canary branch
 net-im/matterbridge 1.21.0: Bridge between a vast array of instant messaging services
 net-im/ripcord-bin 0.4.28: A desktop chat client for Slack and Discord
-net-misc/pterodactyl-daemon 0.6.13 1.4.4: Server control and management daemon for Pterodactyl Panel
+net-misc/pterodactyl-daemon 0.6.13-r1 1.4.4: Server control and management daemon for Pterodactyl Panel
 net-misc/yt-dlp 2021.07.24 9999: A youtube-dl fork with additional features and fixes
 sci-electronics/ghdl 1.0.0: VHDL 2008/93/87 simulator
 sys-process/bottom 0.5.3: A process/system monitor with a customizable interface and a multitude of features.
@@ -92,7 +92,7 @@ virtual/jdk 14 15 16: Virtual for Java Development Kit (JDK)
 virtual/jre 14 15 16: Virtual for Java Runtime Environment (JRE)
 www-apps/pterodactyl-panel 0.7.18-r1 1.4.2: An open-source game server management panel
 www-apps/pterodactyl-panel-common 0: Common files for pterodactyl-panel
-www-apps/pufferpanel 2.1.0: An open source game server management panel
+www-apps/pufferpanel 2.1.0-r1: An open source game server management panel
 www-apps/srht-git 0.72.34: sr.ht git services
 www-apps/srht-meta 0.54.0: sr.ht core account services
 www-apps/srht-paste 0.12.3: sr.ht pastebin services
