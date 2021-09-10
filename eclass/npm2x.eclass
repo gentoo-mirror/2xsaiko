@@ -65,7 +65,7 @@ npm2x_src_unpack() {
 }
 
 npm2x_src_compile() {
-	npm rebuild ${NPM_ARGS}
+	npm rebuild ${NPM_ARGS} || die 'npm rebuild failed'
 }
 
 # @FUNCTION: npm2x_set_globals
