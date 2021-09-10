@@ -61,6 +61,7 @@ npm2x_src_unpack() {
 	npm2x_filter_archives
 	default
 
+	cd "${S}"
 	npm2x_src_unpack_modules
 }
 
