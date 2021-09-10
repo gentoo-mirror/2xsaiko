@@ -49,7 +49,7 @@ src_prepare() {
 src_compile() {
 	cd "${S}"/web
 	npm2x_src_compile
-	npm run build
+	npm run build || die 'npm run build failed'
 	cd "${S}"
 	${EPYTHON} scripts/translate_templates.py --lang-dir lang/ --template-dir templates/
 }
@@ -63,7 +63,7 @@ src_install() {
 	insinto "/usr/share/${PN}"
 	for f in lang static templates configuration.default.ini; do
 		doins -r "${f}"
-		dosym "${EPREFIX}/usr/share/${PN}/${f}" "/usr/libexec/${PN}/${f}"
+		dosym -r "/usr/share/${PN}/${f}" "/usr/libexec/${PN}/${f}"
 	done
 
 	insinto "/usr/libexec/${PN}/media"
