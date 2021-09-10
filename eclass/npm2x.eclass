@@ -16,26 +16,24 @@ EXPORT_FUNCTIONS src_unpack src_compile
 # @DESCRIPTION:
 # Contains libraries to install into node_modules. This should contain all
 # libraries, including recursive dependencies, followed by the install path of
-# the module. These URLs also need to be added to SRC_URI manually.
+# the module. This will be read by npm2x_set_globals to output NPM_SRC_URI for
+# use in SRC_URI.
 #
 # The way to get the content of this array is to extract the package yourself,
-# then call npm install and then use the following command to get all the
-# dependency URLs:
+# then call npm install and then use the npm2x-gen-links script in the _util
+# directory of this repository which will output a NPM_MODULES declaration for
+# you:
 #
-#     find node_modules -name package.json -exec jq -r '._resolved' {} \; -print |
-#         xargs -n2 |
-#         sed -E '/^null /d;s/ node_modules\/(.*)\/package.json/\t\1/'
-#
-# Beware, this could be a lot of lines so it is a good idea to save it to a
-# temporary file instead of copying it from your terminal directly.
+#     % npm install
+#     % /var/db/repos/2xsaiko/_util/npm2x-gen-links >> my-npm-package-1.0.0.ebuild
 #
 # @EXAMPLE:
 #
 # @CODE
 # NPM_MODULES="
-#     https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz	balanced-match
-#     https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz	brace-expansion
-#     https://registry.npmjs.org/clean-css/-/clean-css-4.1.11.tgz	clean-css
+#     balanced-match	1.0.0	balanced-match
+#     brace-expansion	1.1.11	brace-expansion
+#     clean-css	4.1.11	clean-css
 # "
 # @CODE
 
