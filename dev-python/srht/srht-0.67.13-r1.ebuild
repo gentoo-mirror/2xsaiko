@@ -47,7 +47,7 @@ IUSE=""
 DEPEND="
 	net-libs/nodejs[npm]
 	dev-python/alembic
-	dev-python/beautifulsoup:4
+	dev-python/beautifulsoup4
 	dev-python/bleach
 	dev-python/celery
 	dev-python/cryptography
