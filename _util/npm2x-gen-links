@@ -1,0 +1,37 @@
+#!/bin/bash
+
+npm_root="$(npm root)"
+
+get_npm_url() {
+  name="$(jq -r '.name' "$1")"
+  version="$(jq -r '.version' "$1")"
+
+  echo "${name} ${version}"
+}
+
+echo 'NPM_MODULES="'
+
+find "${npm_root}" -name package.json -print0 |
+  while IFS= read -r -d '' file; do
+    trimmed_path="${file#${npm_root}/*}"
+
+    module_dir="${file%/*}"
+    parent_dir="${module_dir%/*}"
+    parent_dirname="${parent_dir##*/}"
+    parent2_dir="${parent_dir%/*}"
+    parent2_dirname="${parent2_dir##*/}"
+
+    if ! ( [[ "${parent_dirname}" == node_modules ]] || ( [[ "${parent_dirname}" == @* ]] && [[ "${parent2_dirname}" == "node_modules" ]] ) ); then
+      echo "warning: skipping entry '$(get_npm_url ${file})	${trimmed_path%/package.json}' since it is not in a node_modules directory" >&2
+      continue
+    fi
+
+    echo "	$(get_npm_url ${file})	${trimmed_path%/package.json}"
+  done
+
+echo '"'
+echo 'npm2x_set_globals'
+
+echo 'warning: this script is not 100% accurate yet and there might be packages' >&2
+echo 'added to the list that are nested packages and thus not on the NPM' >&2
+echo 'registry; these have to be removed manually for now' >&2

@@ -15,21 +15,21 @@ DESCRIPTION="sr.ht shared code"
 HOMEPAGE="https://git.sr.ht/~sircmpwn/core.sr.ht"
 
 NPM_MODULES="
-	https://registry.npmjs.org/clean-css/-/clean-css-4.1.11.tgz	clean-css
-	https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz	concat-map
-	https://registry.npmjs.org/clean-css-cli/-/clean-css-cli-4.1.11.tgz	clean-css-cli
-	https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz	wrappy
-	https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz	inflight
-	https://registry.npmjs.org/once/-/once-1.4.0.tgz	once
-	https://registry.npmjs.org/commander/-/commander-2.15.1.tgz	commander
-	https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz	fs.realpath
-	https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz	balanced-match
-	https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz	brace-expansion
-	https://registry.npmjs.org/glob/-/glob-7.1.2.tgz	glob
-	https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz	inherits
-	https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz	source-map
-	https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz	path-is-absolute
-	https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz	minimatch
+	clean-css 4.1.11	clean-css
+	concat-map 0.0.1	concat-map
+	clean-css-cli 4.1.11	clean-css-cli
+	wrappy 1.0.2	wrappy
+	inflight 1.0.6	inflight
+	once 1.4.0	once
+	commander 2.15.1	commander
+	fs.realpath 1.0.0	fs.realpath
+	balanced-match 1.0.0	balanced-match
+	brace-expansion 1.1.11	brace-expansion
+	glob 7.1.2	glob
+	inherits 2.0.3	inherits
+	source-map 0.5.7	source-map
+	path-is-absolute 1.0.1	path-is-absolute
+	minimatch 3.0.4	minimatch
 "
 npm2x_set_globals
 
