@@ -90,7 +90,9 @@ npm2x_set_globals() {
 
 # @FUNCTION: npm2x_filter_archives
 # @DESCRIPTION:
-# Strips out all the dependencies specified in $NPM_SRC_URI from $A.
+# Strips out all the dependencies specified in $NPM_MODULES from $A to keep them
+# from being unpacked by default_src_unpack since unpacking is handled
+# separately by this eclass.
 #
 # NB: This is hacky as fuck since $A is supposed to be read-only.
 npm2x_filter_archives() {
