@@ -88,9 +88,11 @@ npm2x_set_globals() {
 	_NPM2X_SET_GLOBALS_CALLED=1
 }
 
-# @FUNCTION: npm2x_src_filter_archives
+# @FUNCTION: npm2x_filter_archives
 # @DESCRIPTION:
-# Strips out all the dependencies specified in $NPM_SRC_URI from $A.
+# Strips out all the dependencies specified in $NPM_MODULES from $A to keep them
+# from being unpacked by default_src_unpack since unpacking is handled
+# separately by this eclass.
 #
 # NB: This is hacky as fuck since $A is supposed to be read-only.
 npm2x_filter_archives() {
@@ -136,6 +138,13 @@ npm2x_unpack_modules() {
 	done
 }
 
+# @FUNCTION: _npm2x_setup_bins
+# @USAGE: <package dir>
+# @DESCRIPTION:
+# Links in programs provided by the given package into the corresponding
+# node_modules/.bin directory.
+#
+# This function is internal use only.
 _npm2x_setup_bins() {
 	local binname binpath nmpath
 
@@ -163,6 +172,12 @@ _npm2x_setup_bins() {
 	' "$1/package.json")
 }
 
+# @FUNCTION: _npm2x_find_closest_node_modules
+# @USAGE: <package dir>
+# @DESCRIPTION:
+# Prints the closest node_modules path to the given package.
+#
+# This function is internal use only.
 _npm2x_find_closest_node_modules() {
 	cur="$1"
 	last=""
@@ -180,12 +195,32 @@ _npm2x_find_closest_node_modules() {
 	die "couldn't find node_modules path in '$1'"
 }
 
+# @FUNCTION: _npm2x_sources_parse_init
+# @USAGE:
+# @DESCRIPTION:
+# Initializes the source parser. This must be called before calling
+# _npm2x_sources_parse.
+#
+# This function is internal use only.
 _npm2x_sources_parse_init() {
 	pstate=0
 	uri=
 	path=
 }
 
+# @FUNCTION: _npm2x_sources_parse
+# @USAGE: <token>
+# @DESCRIPTION:
+# Parse one token from NPM_SOURCES variable. Returns 0 when a complete
+# dependency line has been read, 1 otherwise. Sets the following variables:
+#
+# - package:   The full package name,              e.g. @babel/core
+# - version:   The actual package version,         e.g. 7.12.9
+# - shortname: The short package name,             e.g. core
+# - filename:  The downloaded file name,           e.g. @babel-core-7.12.9.tgz
+# - path:      The path to extract the package in, e.g. @babel/core
+#
+# This function is internal use only.
 _npm2x_sources_parse() {
 	if [[ $pstate = 0 ]]; then
 		package="$1"
@@ -204,8 +239,14 @@ _npm2x_sources_parse() {
 	fi
 }
 
+# @FUNCTION: _npm2x_sources_end
+# @USAGE:
+# @DESCRIPTION:
+# Checks whether the parser is in a valid end state.
+#
+# This function is internal use only.
 _npm2x_sources_end() {
 	if [[ $pstate != 0 ]]; then
-		eerror "unexpected EOF; check NPM_MODULES"
+		die "unexpected EOF; check NPM_MODULES"
 	fi
 }
