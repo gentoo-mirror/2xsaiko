@@ -8,7 +8,7 @@
 # 2xsaiko <me@dblsaiko.net>
 # @BLURB: handle packages that need to be installed using npm install
 # @DESCRIPTION:
-# 
+# Provides functions for packaging software using the npm package manager.
 
 EXPORT_FUNCTIONS src_unpack src_compile
 
@@ -39,11 +39,13 @@ EXPORT_FUNCTIONS src_unpack src_compile
 # "
 # @CODE
 
-# @ECLASS-VARIABLE: NPM-ARGS
+# @ECLASS-VARIABLE: NPM_ARGS
 # @DESCRIPTION:
 # Arguments to pass to npm rebuild in src_compile.
 
-BDEPEND="net-libs/nodejs[npm]"
+BDEPEND="
+	net-libs/nodejs[npm]
+	app-misc/jq"
 
 npm2x_src_unpack() {
 	npm2x_filter_archives
@@ -112,8 +114,54 @@ npm2x_unpack_modules() {
 			mkdir -p "node_modules/$path" &&
 				tar xf "${DISTDIR}/$filename" --strip-components=1 -C "node_modules/$path"
 			eend $?
+
+			_npm2x_setup_bins "node_modules/$path"
 		fi
 	done
+}
+
+_npm2x_setup_bins() {
+	local binname binpath nmpath
+
+	nmpath="$(_npm2x_find_closest_node_modules "$1")"
+
+	if ! [[ -d "${nmpath}/.bin" ]]; then
+		mkdir "${nmpath}/.bin"
+	fi
+
+	while IFS=$'\t' read binname binpath; do
+		binname="$(basename "${binname}")" # fix for package names like @babel/xyz
+		einfo "linking bin $binname"
+		ln -sr "$1/${binpath}" "${nmpath}/.bin/${binname}" || die "failed to link $1/${binpath}' -> '${nmpath}/.bin/${binname}'"
+	done < <(jq -r '
+		if has("bin")
+		then
+			if .bin | type == "string"
+			then [.name, .bin]
+			elif .bin | type == "object"
+			then .bin | to_entries | map([.key, .value]) | .[]
+			else null
+			end
+		else empty
+		end | @tsv
+	' "$1/package.json")
+}
+
+_npm2x_find_closest_node_modules() {
+	cur="$1"
+	last=""
+
+	while [[ "$cur" != "$last" ]]; do
+		if [[ "$(basename "$cur")" == "node_modules" ]]; then
+			echo "$cur"
+			return
+		fi
+
+		last="$cur"
+		cur="$(dirname "$cur")"
+	done
+
+	die "couldn't find node_modules path in '$1'"
 }
 
 _npm2x_sources_parse_init() {
