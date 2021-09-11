@@ -21,6 +21,7 @@ if [[ "${PV}" = "9999" ]]; then
 
 	EGIT_REPO_URI="https://gitlab.com/kwinft/kwinft/"
 	KEYWORDS=""
+	PVCUT="5.22.5" # don't require -9999 dependencies
 else
 	SRC_URI="https://gitlab.com/kwinft/kwinft/-/archive/kwinft@${PV}/${MY_TAR_NAME}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~x86"
