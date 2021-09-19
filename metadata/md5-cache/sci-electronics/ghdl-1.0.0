@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure prepare setup
+DEPEND=ada_target_gnat_2019? ( dev-lang/gnat-gpl:8.3.1 ) ada_target_gnat_2020? ( dev-lang/gnat-gpl:9.3.1 )
+DESCRIPTION=VHDL 2008/93/87 simulator
+EAPI=7
+HOMEPAGE=http://ghdl.free.fr/
+INHERIT=ada multilib
+IUSE=synth ada_target_gnat_2019 ada_target_gnat_2020 -ada_target_gnat_2021
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=ada_target_gnat_2019? ( dev-lang/gnat-gpl:8.3.1 ) ada_target_gnat_2020? ( dev-lang/gnat-gpl:9.3.1 )
+REQUIRED_USE=^^ ( ada_target_gnat_2019 ada_target_gnat_2020 )
+SLOT=0
+SRC_URI=https://github.com/ghdl/ghdl/archive/v1.0.0.tar.gz -> ghdl-1.0.0.tar.gz
+_eclasses_=ada	5284f8916f3a361875abfcb73dd44593	multilib	4b66d835ec72e021e359bb81eacfe988	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa
+_md5_=ae436bc755c00341217871b08a3c30cf
