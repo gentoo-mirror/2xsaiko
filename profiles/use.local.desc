@@ -39,4 +39,5 @@ sci-electronics/ghdl:synth - Enable synthesis feature
 www-apps/srht-git:cron - use cronjob
 www-apps/srht-git:srht-builds - builds.sr.ht integration
 www-apps/srht-meta:billing - Enable billing support
+www-client/waterfox-bin:gmp-autoupdate - Allow Gecko Media Plugins (binary blobs) to be automatically downloaded and kept up-to-date in user profiles
 www-servers/jellyfin-bin:web - Install the web component of Jellyfin.
