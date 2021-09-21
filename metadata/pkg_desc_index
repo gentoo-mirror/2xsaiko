@@ -76,7 +76,6 @@ net-im/discord-canary-bin 0.0.116: All-in-one voice and text chat for gamers - C
 net-im/matterbridge 1.21.0: Bridge between a vast array of instant messaging services
 net-im/ripcord-bin 0.4.28: A desktop chat client for Slack and Discord
 net-misc/pterodactyl-daemon 0.6.13-r1 1.4.4: Server control and management daemon for Pterodactyl Panel
-net-misc/yt-dlp 2021.07.24 9999: A youtube-dl fork with additional features and fixes
 sci-electronics/ghdl 1.0.0: VHDL 2008/93/87 simulator
 sys-process/bottom 0.5.3: A process/system monitor with a customizable interface and a multitude of features.
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
