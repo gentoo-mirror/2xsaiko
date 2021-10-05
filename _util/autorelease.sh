@@ -63,7 +63,7 @@ update_package() {
     (
       cd "../$1" && \
         git add . && \
-        repoman commit -m "$1: $(echo "${new_versions[@]}")"
+        pkgdev commit -strue -m "$1: $(echo "${new_versions[@]}")"
     )
   fi
 }
