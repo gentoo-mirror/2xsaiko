@@ -9,7 +9,7 @@ inherit python-single-r1 npm2x
 NPM_MODULES="
 	lines-and-columns 1.1.6	lines-and-columns
 	source-map 0.6.1	postcss/node_modules/source-map
-	postcss 8.1.10	postcss
+	postcss 8.2.15	postcss
 	semver 7.3.2	sass-loader/node_modules/semver
 	loader-utils 2.0.0	sass-loader/node_modules/loader-utils
 	schema-utils 3.0.0	sass-loader/node_modules/schema-utils
@@ -56,7 +56,7 @@ NPM_MODULES="
 	esquery 1.3.1	esquery
 	path-type 4.0.0	path-type
 	debug 4.3.1	debug
-	colorette 1.2.1	colorette
+	colorette 1.2.2	colorette
 	icss-utils 5.1.0	icss-utils
 	onetime 5.1.2	onetime
 	globals 12.4.0	@eslint/eslintrc/node_modules/globals
@@ -100,7 +100,7 @@ NPM_MODULES="
 	webpack-cli 4.2.0	webpack-cli
 	browserslist 4.14.7	browserslist
 	get-stream 5.2.0	get-stream
-	nanoid 3.1.18	nanoid
+	nanoid 3.1.23	nanoid
 	npm-run-path 4.0.1	npm-run-path
 	source-map 0.6.1	webpack-sources/node_modules/source-map
 	webpack-sources 1.4.3	webpack-sources
@@ -230,7 +230,7 @@ NPM_MODULES="
 	comment-parser 0.7.6	comment-parser
 	camel-case 4.1.1	camel-case
 	buffer-from 1.1.1	buffer-from
-	lodash 4.17.20	lodash
+	lodash 4.17.21	lodash
 	table-layout 1.0.1	table-layout
 	json-schema-traverse 0.4.1	json-schema-traverse
 	es-abstract 1.17.7	object.getownpropertydescriptors/node_modules/es-abstract
@@ -346,7 +346,7 @@ NPM_MODULES="
 	source-map 0.6.1	terser/node_modules/source-map
 	terser 4.8.0	terser
 	array.prototype.flat 1.2.4	array.prototype.flat
-	hosted-git-info 2.8.8	hosted-git-info
+	hosted-git-info 2.8.9	hosted-git-info
 	semver 7.3.2	css-loader/node_modules/semver
 	loader-utils 2.0.0	css-loader/node_modules/loader-utils
 	schema-utils 3.0.0	css-loader/node_modules/schema-utils
@@ -549,7 +549,6 @@ NPM_MODULES="
 	esprima 4.0.1	esprima
 	he 1.2.0	he
 	sprintf-js 1.0.3	sprintf-js
-	vfile-location 3.2.0	vfile-location
 	picomatch 2.2.2	picomatch
 	end-of-stream 1.4.4	end-of-stream
 	minimatch 3.0.4	minimatch
