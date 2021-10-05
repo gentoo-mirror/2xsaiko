@@ -29,7 +29,6 @@ RDEPEND="${DEPEND}
 		dev-python/packaging[${PYTHON_USEDEP}]
 		dev-python/pymumble[${PYTHON_USEDEP}]
 		dev-python/pyradios[${PYTHON_USEDEP}]
-		dev-python/appdirs[${PYTHON_USEDEP}]
 	')"
 BDEPEND=""
 
