@@ -39,8 +39,8 @@ dev-python/minio 5.0.10-r2: MinIO Python Library for Amazon S3 Compatible Cloud 
 dev-python/mistletoe 0.7.2: A fast, extensible Markdown parser in pure Python.
 dev-python/opuslib 3.0.1: Python bindings to the libopus, IETF low-delay audio codec
 dev-python/py-amqp 5.0.2: Low-level AMQP client for Python (fork of amqplib)
-dev-python/pymumble 1.5: Mumble client implementation in Python
-dev-python/pyradios 0.0.22: Python client for the Radio Browser
+dev-python/pymumble 1.6.1: Mumble client implementation in Python
+dev-python/pyradios 0.0.22-r1: Python client for the Radio Browser
 dev-python/pystache 0.5.4 0.5.4-r1: Mustache for Python
 dev-python/scmsrht 0.22.12: sr.ht source control service shared code
 dev-python/srht 0.67.13-r1: sr.ht shared code
@@ -70,7 +70,7 @@ mail-filter/opendkim 2.11.0_p2: A milter providing DKIM signing and verification
 media-gfx/blockbench-bin 3.9.3: A boxy 3D model editor
 media-gfx/sane-airscan 0.99.26: Scanner Access Now Easy - universal driver for eSCL (Apple AirScan) and WSD
 media-gfx/tikzit 2.1.6: pgf/TikZ diagram editor
-media-sound/botamusique 7.2-r1 9999: Bot to play youtube/soundcloud/radio/local music on Mumble.
+media-sound/botamusique 7.2.1 9999: Bot to play youtube/soundcloud/radio/local music on Mumble.
 media-video/obs-glcapture 9999: GL capture for OBS
 net-im/discord-canary-bin 0.0.116: All-in-one voice and text chat for gamers - Canary branch
 net-im/matterbridge 1.21.0: Bridge between a vast array of instant messaging services
