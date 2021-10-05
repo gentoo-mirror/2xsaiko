@@ -17,5 +17,6 @@ KEYWORDS="~amd64 ~x86"
 DEPEND=""
 RDEPEND="${DEPEND}
 	>=dev-python/requests-2.22.0
-	>=dev-python/responses-0.12.1"
+	>=dev-python/responses-0.12.1
+	>=dev-python/appdirs-1.4.4-r1"
 BDEPEND=""
