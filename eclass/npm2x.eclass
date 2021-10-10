@@ -73,8 +73,12 @@ npm2x_src_install() {
 
 	while IFS=$'\t' read binname binpath; do
 		if [[ $installed -eq 0 ]]; then
-			insinto /usr/libexec/"${PN}"
-			doins -r "${S}"/* || die
+			# fix scuffed permissions on some npm packages
+			chmod -R +644 "${S}/node_modules"
+			chmod -R -022 "${S}/node_modules"
+
+			dodir /usr/libexec/ || die
+			cp -r "${S}" "${ED}"/usr/libexec/"${PN}" || die
 			installed=1
 		fi
 
