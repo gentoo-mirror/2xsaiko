@@ -1,0 +1,24 @@
+--- a/node_modules/puppeteer/lib/cjs/puppeteer/node/Launcher.js
++++ b/node_modules/puppeteer/lib/cjs/puppeteer/node/Launcher.js
+@@ -426,7 +426,8 @@
+     if (!launcher._isPuppeteerCore) {
+         const executablePath = process.env.PUPPETEER_EXECUTABLE_PATH ||
+             process.env.npm_config_puppeteer_executable_path ||
+-            process.env.npm_package_config_puppeteer_executable_path;
++            process.env.npm_package_config_puppeteer_executable_path ||
++            "/usr/bin/chromium";
+         if (executablePath) {
+             const missingText = !fs.existsSync(executablePath)
+                 ? 'Tried to use PUPPETEER_EXECUTABLE_PATH env variable to launch browser but did not find any executable at: ' +
+--- a/node_modules/puppeteer/lib/esm/puppeteer/node/Launcher.js
++++ b/node_modules/puppeteer/lib/esm/puppeteer/node/Launcher.js
+@@ -405,7 +405,8 @@
+     if (!launcher._isPuppeteerCore) {
+         const executablePath = process.env.PUPPETEER_EXECUTABLE_PATH ||
+             process.env.npm_config_puppeteer_executable_path ||
+-            process.env.npm_package_config_puppeteer_executable_path;
++            process.env.npm_package_config_puppeteer_executable_path ||
++            "/usr/bin/chromium";
+         if (executablePath) {
+             const missingText = !fs.existsSync(executablePath)
+                 ? 'Tried to use PUPPETEER_EXECUTABLE_PATH env variable to launch browser but did not find any executable at: ' +

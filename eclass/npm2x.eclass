@@ -10,7 +10,7 @@
 # @DESCRIPTION:
 # Provides functions for packaging software using the npm package manager.
 
-EXPORT_FUNCTIONS src_unpack src_compile
+EXPORT_FUNCTIONS src_unpack src_compile src_install
 
 # @ECLASS-VARIABLE: NPM_MODULES
 # @DESCRIPTION:
@@ -65,6 +65,22 @@ npm2x_src_unpack() {
 
 npm2x_src_compile() {
 	npm rebuild ${NPM_ARGS} || die 'npm rebuild failed'
+}
+
+npm2x_src_install() {
+	local binname binpath installed
+	installed=0
+
+	while IFS=$'\t' read binname binpath; do
+		if [[ $installed -eq 0 ]]; then
+			insinto /usr/libexec/"${PN}"
+			doins -r "${S}"/* || die
+			installed=1
+		fi
+
+		chmod +x "${ED}"/usr/libexec/"${PN}/${binpath}" || die
+		dosym -r /usr/libexec/"${PN}/${binpath}" /usr/bin/"${binname}" || die
+	done < <(_npm2x_iter_bins "${S}")
 }
 
 # @FUNCTION: npm2x_set_globals
@@ -158,7 +174,19 @@ _npm2x_setup_bins() {
 		binname="$(basename "${binname}")" # fix for package names like @babel/xyz
 		einfo "linking bin $binname"
 		ln -sr "$1/${binpath}" "${nmpath}/.bin/${binname}" || die "failed to link $1/${binpath}' -> '${nmpath}/.bin/${binname}'"
-	done < <(jq -r '
+	done < <(_npm2x_iter_bins "$1")
+}
+
+# @FUNCTION: _npm2x_iter_bins
+# @USAGE: <package dir>
+# @DESCRIPTION:
+# Iterates over binaries defined in package.json and returns them in tsv format.
+# @EXAMPLE:
+# while IFS=$'\t' read binname binpath; do
+#    echo "${binname} -> ${binpath}"
+# done < <(_npm2x_iter_bins "package")
+_npm2x_iter_bins() {
+	jq -r '
 		if has("bin")
 		then
 			if .bin | type == "string"
@@ -169,7 +197,7 @@ _npm2x_setup_bins() {
 			end
 		else empty
 		end | @tsv
-	' "$1/package.json")
+	' "$1/package.json"
 }
 
 # @FUNCTION: _npm2x_find_closest_node_modules
