@@ -88,5 +88,6 @@ www-apps/srht-git 0.72.34: sr.ht git services
 www-apps/srht-meta 0.54.0: sr.ht core account services
 www-apps/srht-paste 0.12.3: sr.ht pastebin services
 www-client/waterfox-bin 3.2.6: Waterfox Web Browser
+www-misc/pageres-cli 6.0.0: Capture website screenshots
 www-servers/jellyfin-bin 10.6.4-r1: The Free Software Media System - prebuilt binaries
 x11-apps/xcur2png 9999: Convert Xcur format to PNG
