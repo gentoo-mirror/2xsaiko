@@ -1,7 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=Virtual for Java Runtime Environment (JRE)
-EAPI=7
-KEYWORDS=~amd64 ~arm64 ~ppc64
-RDEPEND=|| ( virtual/jdk:15 )
-SLOT=15
-_md5_=a7c60ec62ca2630cf79b3486e34eea70
