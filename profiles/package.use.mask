@@ -1,4 +1,0 @@
-dev-java/openjdk:14 javafx
-dev-java/openjdk:15 javafx
-dev-java/openjdk:16 javafx
-dev-java/openjdk:17 javafx
