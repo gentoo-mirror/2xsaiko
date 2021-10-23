@@ -61,10 +61,12 @@ RESTRICT="strip splitdebug mirror"
 jetbrains-ide_src_unpack() {
 	default_src_unpack
 
-	if [[ "${IDE_DIST_VERSION}" = "any" ]]; then
-		mv "${IDE_DIST_NAME}"-* "${P}"
+	if [[ "${IDE_DIST_VERSION}" = "" ]]; then
+		mv "${IDE_DIST_NAME}" "${P}" || die
+	elif [[ "${IDE_DIST_VERSION}" = "any" ]]; then
+		mv "${IDE_DIST_NAME}"-* "${P}" || die
 	else
-		mv "${IDE_DIST_NAME}-${IDE_DIST_VERSION}" "${P}"
+		mv "${IDE_DIST_NAME}-${IDE_DIST_VERSION}" "${P}" || die
 	fi
 }
 
@@ -74,7 +76,20 @@ jetbrains-ide_src_prepare() {
 	fi
 
 	rm -vf "${S}"/plugins/maven/lib/maven3/lib/jansi-native/*/libjansi*
-	rm -vrf "${S}"/lib/pty4j-native/linux/{aarch64,mips64el,ppc64le}
+	rm -vrf "${S}"/lib/pty4j-native/linux/{mips64el,ppc64le}
+
+	if ! use arm64; then
+		rm -vrf "${S}"/lib/pty4j-native/linux/aarch64
+	fi
+
+	if ! use x86; then
+		rm -vrf "${S}"/lib/pty4j-native/linux/x86
+	fi
+
+	if ! use amd64; then
+		rm -vrf "${S}"/lib/pty4j-native/linux/x86-64
+	fi
+
 	rm -vf "${S}"/bin/libdbm64*
 
 	sed -i \
@@ -97,7 +112,7 @@ jetbrains-ide_src_install() {
 		die "must set IDE_BIN_NAME before calling jetbrains-ide_src_install!"
 	fi
 
-	local dir="/opt/${P}"
+	local dir="/opt/${PN}"
 	dodir "${dir}"
 	cp -a "${S}"/* "${ED}/${dir}/"
 
