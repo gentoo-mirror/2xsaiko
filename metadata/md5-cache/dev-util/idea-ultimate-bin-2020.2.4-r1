@@ -10,5 +10,5 @@ RDEPEND=dev-util/jetbrains-common dev-java/jansi-native dev-libs/libdbusmenu
 RESTRICT=strip splitdebug mirror
 SLOT=0
 SRC_URI=https://download.jetbrains.com/idea/ideaIU-2020.2.4-no-jbr.tar.gz
-_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	jetbrains-ide	d5ad046d9a0e5bca567a115214087d6c
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	jetbrains-ide	a22f8e5cd7fb4ca5e2718fe5ccdb6047
 _md5_=82085381b21993dbc7294e94fb5c7744
