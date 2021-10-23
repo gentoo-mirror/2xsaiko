@@ -75,6 +75,10 @@ jetbrains-ide_src_prepare() {
 		rm -r "${S}/jbr"
 	fi
 
+	if [[ -d "${S}/jre" ]]; then
+		rm -r "${S}/jre"
+	fi
+
 	rm -vf "${S}"/plugins/maven/lib/maven3/lib/jansi-native/*/libjansi*
 	rm -vrf "${S}"/lib/pty4j-native/linux/{mips64el,ppc64le}
 
