@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Common setup for JetBrains IDEs
+EAPI=7
+HOMEPAGE=https://www.jetbrains.com/
+KEYWORDS=~amd64 ~arm64 ~x86
+LICENSE=MIT
+RDEPEND=>=dev-java/jetbrains-jre-bin-11.0.12 dev-java/jansi-native dev-libs/libdbusmenu
+SLOT=0
+_md5_=48e1332f052471c5d5267aada25b66d0
