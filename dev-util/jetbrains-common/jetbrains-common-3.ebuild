@@ -13,7 +13,7 @@ KEYWORDS="~amd64 ~arm64 ~x86"
 
 DEPEND=""
 RDEPEND="${DEPEND}
-	>=dev-java/jetbrains-jre-bin-11.0.12
+	>=dev-java/jetbrains-jre-bin-11.0.10_p1398_p1
 	dev-java/jansi-native
 	dev-libs/libdbusmenu"
 BDEPEND=""
