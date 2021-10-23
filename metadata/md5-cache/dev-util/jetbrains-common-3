@@ -4,6 +4,6 @@ EAPI=7
 HOMEPAGE=https://www.jetbrains.com/
 KEYWORDS=~amd64 ~arm64 ~x86
 LICENSE=MIT
-RDEPEND=>=dev-java/jetbrains-jre-bin-11.0.12 dev-java/jansi-native dev-libs/libdbusmenu
+RDEPEND=>=dev-java/jetbrains-jre-bin-11.0.10_p1398_p1 dev-java/jansi-native dev-libs/libdbusmenu
 SLOT=0
-_md5_=48e1332f052471c5d5267aada25b66d0
+_md5_=ba2aa98442ba51162e971f4e519b3c14
