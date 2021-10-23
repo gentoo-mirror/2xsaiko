@@ -10,7 +10,7 @@ SRC_URI="https://download.jetbrains.com/rider/JetBrains.Rider-${PV}.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64 ~x86"
 IUSE=""
 
 IDE_FULL_NAME="Rider"

@@ -10,7 +10,7 @@ SRC_URI="https://download.jetbrains.com/idea/ideaIC-${PV}-no-jbr.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64 ~x86"
 IUSE=""
 
 IDE_FULL_NAME="IntelliJ IDEA Community"

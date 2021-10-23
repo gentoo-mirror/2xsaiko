@@ -37,7 +37,7 @@ SRC_URI="https://redirector.gvt1.com/edgedl/android/studio/ide-zips/${PV}/androi
 LICENSE="Apache-2.0"
 SLOT="0"
 IUSE="selinux"
-KEYWORDS="~amd64 ~x86 ~arm64"
+KEYWORDS="~amd64 ~arm64 ~x86"
 
 RDEPEND="${DEPEND}
 	selinux? ( sec-policy/selinux-android )
