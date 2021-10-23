@@ -9,11 +9,11 @@ SRC_URI=""
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86 ~arm64"
 
 DEPEND=""
 RDEPEND="${DEPEND}
-	>=dev-java/jetbrains-jre-bin-11.0.10-r1
+	>=dev-java/jetbrains-jre-bin-11.0.12
 	dev-java/jansi-native
 	dev-libs/libdbusmenu"
 BDEPEND=""
@@ -22,7 +22,7 @@ S="${WORKDIR}"
 
 src_install() {
 	insinto "/etc/profile.d"
-	newins "${FILESDIR}/jbrsdk-r1.sh" jbrsdk.sh
+	newins "${FILESDIR}/jbrsdk.sh" jbrsdk.sh
 
 	# recommended by: https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
 	mkdir -p "${D}/etc/sysctl.d/" || die
