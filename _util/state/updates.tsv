@@ -78,6 +78,8 @@ version	AppCode	OC-RELEASE-licensing-RELEASE	2021.1.3
 version	AppCode	OC-RELEASE-licensing-RELEASE	2021.2
 version	AppCode	OC-RELEASE-licensing-RELEASE	2021.2.1
 version	AppCode	OC-RELEASE-licensing-RELEASE	2021.2.2
+version	AppCode	OC-RELEASE-licensing-RELEASE	2021.2.3
+version	AppCode	OC-RELEASE-licensing-RELEASE	2021.2.4
 version	AppCode	appcode_20	2.1.3
 version	AppCode	appcode_25	2.5.6
 version	AppCode	appcode_3	3.0.7
@@ -212,6 +214,7 @@ version	DataSpell	PD-EAP-licensing-EAP	2021.3 EAP
 version	DataSpell	PD-EAP-licensing-EAP	EAP 18
 version	DataSpell	PD-EAP-licensing-EAP	EAP 18.1
 version	DataSpell	PD-EAP-licensing-EAP	EAP 19
+version	DataSpell	PD-EAP-licensing-EAP	EAP 20
 version	GoLand	GO-EAP-licensing-EAP	2020.1 Beta
 version	GoLand	GO-EAP-licensing-EAP	2020.1 EAP
 version	GoLand	GO-EAP-licensing-EAP	2020.1 Release Candidate
@@ -387,12 +390,15 @@ version	IntelliJ IDEA Edu	IE-RELEASE-licensing-RELEASE	2021.1.3
 version	IntelliJ IDEA Edu	IE-RELEASE-licensing-RELEASE	2021.2
 version	IntelliJ IDEA Edu	IE-RELEASE-licensing-RELEASE	2021.2.1
 version	IntelliJ IDEA Edu	IE-RELEASE-licensing-RELEASE	2021.2.2
+version	IntelliJ IDEA Edu	IE-RELEASE-licensing-RELEASE	2021.2.3
 version	JetBrains DS	PD-EAP-licensing-EAP	2021.1 EAP
 version	JetBrains DS	PD-EAP-licensing-EAP	2021.2 EAP
 version	JetBrains DS	PD-EAP-licensing-EAP	2021.3 EAP
 version	JetBrains DS	PD-EAP-licensing-EAP	EAP 18
 version	JetBrains DS	PD-EAP-licensing-EAP	EAP 18.1
 version	JetBrains Gateway	GW-EAP-licensing-EAP	213.4958 EAP
+version	JetBrains Gateway	GW-EAP-licensing-EAP	213.5366 EAP
+version	JetBrains Gateway	GW-EAP-licensing-RELEASE	213.5449.25 EAP
 version	MPS	MPS-EAP-licensing-EAP	2021.2-EAP1 EAP
 version	MPS	MPS-EAP-licensing-EAP	2021.2-EAP2 EAP
 version	MPS	MPS-EAP-licensing-RELEASE	2021.1-RC1 EAP
@@ -616,6 +622,7 @@ version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	2021.1.3
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	2021.2
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	2021.2.1
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	2021.2.2
+version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	2021.2.3
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	3.0.1
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	3.5.1
 version	PyCharm Edu	PE-RELEASE-licensing-RELEASE	4.0.2
@@ -668,6 +675,8 @@ version	Rider	RD-EAP-licensing-EAP	2021.3-EAP1 EAP
 version	Rider	RD-EAP-licensing-EAP	2021.3-EAP2 EAP
 version	Rider	RD-EAP-licensing-EAP	2021.3-EAP3 EAP
 version	Rider	RD-EAP-licensing-EAP	2021.3-EAP4 EAP
+version	Rider	RD-EAP-licensing-EAP	2021.3-EAP5 EAP
+version	Rider	RD-EAP-licensing-EAP	2021.3-EAP6 EAP
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.1.2
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.2.1
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.3.1
