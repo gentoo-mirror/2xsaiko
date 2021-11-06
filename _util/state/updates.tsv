@@ -232,6 +232,7 @@ version	GoLand	GO-EAP-licensing-EAP	2021.1 Release Candidate
 version	GoLand	GO-EAP-licensing-EAP	2021.2 Beta
 version	GoLand	GO-EAP-licensing-EAP	2021.2 Beta 2
 version	GoLand	GO-EAP-licensing-EAP	2021.2 EAP
+version	GoLand	GO-EAP-licensing-EAP	2021.3 Beta
 version	GoLand	GO-EAP-licensing-EAP	2021.3 EAP
 version	GoLand	GO-EAP-licensing-RELEASE	2020.3.1 Preview
 version	GoLand	GO-EAP-licensing-RELEASE	2021.2 RC
@@ -291,6 +292,7 @@ version	IntelliJ IDEA	IC-IU-EAP-licensing-EAP	2021.1 Beta
 version	IntelliJ IDEA	IC-IU-EAP-licensing-EAP	2021.1 EAP
 version	IntelliJ IDEA	IC-IU-EAP-licensing-EAP	2021.2 Beta
 version	IntelliJ IDEA	IC-IU-EAP-licensing-EAP	2021.2 EAP
+version	IntelliJ IDEA	IC-IU-EAP-licensing-EAP	2021.3 Beta
 version	IntelliJ IDEA	IC-IU-EAP-licensing-EAP	2021.3 EAP
 version	IntelliJ IDEA	IC-IU-EAP-licensing-RELEASE	2018.3 Release Candidate
 version	IntelliJ IDEA	IC-IU-EAP-licensing-RELEASE	2019.1.4 Preview
@@ -421,6 +423,7 @@ version	MPS	MPS-RELEASE-licensing-RELEASE	2021.1
 version	MPS	MPS-RELEASE-licensing-RELEASE	2021.1.1
 version	MPS	MPS-RELEASE-licensing-RELEASE	2021.1.3
 version	MPS	MPS-RELEASE-licensing-RELEASE	2021.2.1
+version	MPS	MPS-RELEASE-licensing-RELEASE	2021.2.2
 version	MPS	MPS-RELEASE-licensing-RELEASE	3.4.4
 version	MPS	MPS32	3.2.4
 version	MPS	MPS33	3.3.5
@@ -872,6 +875,7 @@ version	WebStorm	WS-EAP-licensing-EAP	2021.1 Beta
 version	WebStorm	WS-EAP-licensing-EAP	2021.1 EAP
 version	WebStorm	WS-EAP-licensing-EAP	2021.2 Beta
 version	WebStorm	WS-EAP-licensing-EAP	2021.2 EAP
+version	WebStorm	WS-EAP-licensing-EAP	2021.3 Beta
 version	WebStorm	WS-EAP-licensing-EAP	2021.3 EAP
 version	WebStorm	WS-EAP-licensing-RELEASE	2019.3.2 RC
 version	WebStorm	WS-EAP-licensing-RELEASE	2019.3.3 RC
