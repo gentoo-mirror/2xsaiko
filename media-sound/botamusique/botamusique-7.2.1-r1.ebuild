@@ -572,7 +572,10 @@ RDEPEND="${DEPEND}
 	$(python_gen_impl_dep sqlite)
 	$(python_gen_cond_dep '
 		dev-python/flask[${PYTHON_USEDEP}]
-		net-misc/youtube-dl[${PYTHON_USEDEP}]
+		|| (
+			net-misc/youtube-dl[${PYTHON_USEDEP}]
+			>=net-misc/yt-dlp-2021.10.22-r2[${PYTHON_USEDEP}]
+		)
 		dev-python/python-magic[${PYTHON_USEDEP}]
 		dev-python/pillow[${PYTHON_USEDEP}]
 		media-libs/mutagen[${PYTHON_USEDEP}]
