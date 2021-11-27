@@ -20,6 +20,7 @@ version	AppCode	OC-EAP-licensing-RELEASE	2020.2 RC
 version	AppCode	OC-EAP-licensing-RELEASE	2020.3 RC
 version	AppCode	OC-EAP-licensing-RELEASE	2021.1 RC
 version	AppCode	OC-EAP-licensing-RELEASE	2021.2 RC
+version	AppCode	OC-EAP-licensing-RELEASE	2021.3 RC
 version	AppCode	OC-RELEASE-licensing-RELEASE	2016.1.4
 version	AppCode	OC-RELEASE-licensing-RELEASE	2016.2.4
 version	AppCode	OC-RELEASE-licensing-RELEASE	2016.3.4
@@ -213,9 +214,12 @@ version	DataGrip	DB-RELEASE-licensing-RELEASE	2021.2.1
 version	DataGrip	DB-RELEASE-licensing-RELEASE	2021.2.2
 version	DataGrip	DB-RELEASE-licensing-RELEASE	2021.2.3
 version	DataGrip	DB-RELEASE-licensing-RELEASE	2021.2.4
+version	DataGrip	DB-RELEASE-licensing-RELEASE	2021.3
+version	DataGrip	DB-RELEASE-licensing-RELEASE	2021.3.1
 version	DataGrip	datagrip_1	1.0.5
 version	DataSpell	DS-EAP-licensing-EAP	2021.2 EAP
 version	DataSpell	DS-EAP-licensing-EAP	EAP 20
+version	DataSpell	DS-EAP-licensing-RELEASE	2021.3 RC
 version	DataSpell	PD-EAP-licensing-EAP	2021.2 EAP
 version	DataSpell	PD-EAP-licensing-EAP	2021.3 EAP
 version	DataSpell	PD-EAP-licensing-EAP	EAP 18
@@ -245,6 +249,7 @@ version	GoLand	GO-EAP-licensing-EAP	2021.3 EAP
 version	GoLand	GO-EAP-licensing-RELEASE	2020.3.1 Preview
 version	GoLand	GO-EAP-licensing-RELEASE	2021.2 RC
 version	GoLand	GO-EAP-licensing-RELEASE	2021.3 RC
+version	GoLand	GO-EAP-licensing-RELEASE	2021.3 RC 2
 version	GoLand	GO-RELEASE-licensing-RELEASE	2017.3.5
 version	GoLand	GO-RELEASE-licensing-RELEASE	2018.1.8
 version	GoLand	GO-RELEASE-licensing-RELEASE	2018.2.4
@@ -412,6 +417,7 @@ version	JetBrains Gateway	GW-EAP-licensing-EAP	213.4958 EAP
 version	JetBrains Gateway	GW-EAP-licensing-EAP	213.5366 EAP
 version	JetBrains Gateway	GW-EAP-licensing-RELEASE	213.5449.25 EAP
 version	JetBrains Gateway	GW-EAP-licensing-RELEASE	213.5605.8 EAP
+version	JetBrains Gateway	GW-EAP-licensing-RELEASE	213.5744.181 EAP
 version	JetBrains Gateway	GW-EAP-licensing-RELEASE	213.5744.8 EAP
 version	MPS	MPS-EAP-licensing-EAP	2021.2-EAP1 EAP
 version	MPS	MPS-EAP-licensing-EAP	2021.2-EAP2 EAP
@@ -456,6 +462,7 @@ version	PhpStorm	PS-EAP-licensing-RELEASE	2021.2.1 RC
 version	PhpStorm	PS-EAP-licensing-RELEASE	2021.2.2 Preview
 version	PhpStorm	PS-EAP-licensing-RELEASE	2021.2.3 RC
 version	PhpStorm	PS-EAP-licensing-RELEASE	2021.3 RC
+version	PhpStorm	PS-EAP-licensing-RELEASE	2021.3 RC2
 version	PhpStorm	PS-RELEASE-licensing-RELEASE	2016.1.2
 version	PhpStorm	PS-RELEASE-licensing-RELEASE	2016.2.2
 version	PhpStorm	PS-RELEASE-licensing-RELEASE	2016.3.4
@@ -703,6 +710,7 @@ version	Rider	RD-EAP-licensing-EAP	2021.3-EAP6 EAP
 version	Rider	RD-EAP-licensing-EAP	2021.3-EAP6 EAP6
 version	Rider	RD-EAP-licensing-EAP	2021.3-EAP7 EAP7
 version	Rider	RD-EAP-licensing-EAP	2021.3-EAP8 EAP
+version	Rider	RD-EAP-licensing-EAP	2021.3-EAP9 EAP
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.1.2
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.2.1
 version	Rider	RD-RELEASE-licensing-RELEASE	2017.3.1
