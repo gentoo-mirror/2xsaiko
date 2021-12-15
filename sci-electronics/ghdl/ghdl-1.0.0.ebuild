@@ -3,7 +3,7 @@
 
 EAPI=7
 
-ADA_COMPAT=(gnat_2019 gnat_2020)
+ADA_COMPAT=(gnat_2020 gnat_2021)
 inherit ada multilib
 
 DESCRIPTION="VHDL 2008/93/87 simulator"
