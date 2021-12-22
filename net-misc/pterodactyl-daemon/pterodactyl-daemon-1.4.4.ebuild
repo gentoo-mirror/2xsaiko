@@ -848,7 +848,7 @@ IUSE=""
 
 DEPEND="
 	acct-user/pterodactyl
-	app-emulation/docker"
+	app-containers/docker"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 

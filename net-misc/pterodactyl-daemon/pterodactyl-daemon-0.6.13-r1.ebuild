@@ -507,7 +507,7 @@ IUSE=""
 DEPEND="
 	acct-user/pterodactyl
 	net-libs/nodejs[npm]
-	app-emulation/docker"
+	app-containers/docker"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
