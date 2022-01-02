@@ -11,5 +11,5 @@ RDEPEND=ada_target_gnat_2020? ( dev-lang/gnat-gpl:9.3.1[ada] ) ada_target_gnat_2
 REQUIRED_USE=^^ ( ada_target_gnat_2020 ada_target_gnat_2021 )
 SLOT=0
 SRC_URI=https://github.com/ghdl/ghdl/archive/v1.0.0.tar.gz -> ghdl-1.0.0.tar.gz
-_eclasses_=ada	dd7d6e1357088d74546d8e11f7f485fc	multilib	8a0248f83ae77f945d376ff4a7953257	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8
+_eclasses_=ada	dd7d6e1357088d74546d8e11f7f485fc	multilib	de4beb52bfa93c4c5d96792a6b5e1784	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8
 _md5_=1f5cd654443d2a9c666c7b4092451f3d
