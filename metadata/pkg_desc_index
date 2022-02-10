@@ -70,7 +70,7 @@ media-gfx/tikzit 2.1.6: pgf/TikZ diagram editor
 media-sound/botamusique 7.2.1-r1 9999: Bot to play youtube/soundcloud/radio/local music on Mumble.
 media-video/obs-glcapture 9999: GL capture for OBS
 net-im/discord-canary-bin 0.0.116: All-in-one voice and text chat for gamers - Canary branch
-net-im/matterbridge 1.21.0: Bridge between a vast array of instant messaging services
+net-im/matterbridge 1.23.2: Bridge between a vast array of instant messaging services
 net-im/ripcord-bin 0.4.28: A desktop chat client for Slack and Discord
 net-misc/pterodactyl-daemon 0.6.13-r1 1.4.4: Server control and management daemon for Pterodactyl Panel
 sci-electronics/ghdl 1.0.0: VHDL 2008/93/87 simulator
