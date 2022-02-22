@@ -54,7 +54,7 @@ DEPEND="
 	)
 	doc? (
 		dev-python/docutils[${PYTHON_USEDEP}]
-		>=dev-python/sphinx_celery-2.0[$(python_gen_usedep 'python3*')]
+		>=dev-python/sphinx_celery-2.0[${PYTHON_USEDEP}]
 		dev-python/jinja[${PYTHON_USEDEP}]
 		dev-python/sqlalchemy[${PYTHON_USEDEP}]
 	)"
