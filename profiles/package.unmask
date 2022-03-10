@@ -1,3 +1,0 @@
-# masked from gentoo repo, unmask local
-dev-python/billiard
-dev-python/celery
