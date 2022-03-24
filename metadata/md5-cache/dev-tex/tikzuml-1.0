@@ -9,5 +9,5 @@ LICENSE=all-rights-reserved
 RDEPEND=dev-tex/pgf virtual/latex-base
 SLOT=0
 SRC_URI=https://perso.ensta-paris.fr/~kielbasi/tikzuml/var/files/src/tikzuml-v1.0-2016-03-29.tbz
-_eclasses_=latex-package	e5f296c98696dd02059bc6a5a03282e2
+_eclasses_=latex-package	223c086dd062dba43b89726880f9f0c2
 _md5_=7b8cfc54f70c3321c07104226eeb1f5b
