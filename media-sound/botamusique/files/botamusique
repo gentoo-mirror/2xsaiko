@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cd /usr/libexec/botamusique
-exec /usr/libexec/botamusique/mumbleBot.py "${@}"
