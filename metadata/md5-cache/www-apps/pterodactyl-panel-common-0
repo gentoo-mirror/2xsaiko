@@ -1,9 +1,0 @@
-DEFINED_PHASES=install
-DESCRIPTION=Common files for pterodactyl-panel
-EAPI=7
-HOMEPAGE=https://pterodactyl.io/
-KEYWORDS=~amd64 ~x86
-LICENSE=MIT
-RDEPEND=virtual/cron
-SLOT=0
-_md5_=70f39cd3aea01fcf9a665b14b4ebe1ba

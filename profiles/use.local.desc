@@ -5,31 +5,10 @@
 app-backup/backup-scripts:cron - Install a daily cron script to back up the system.
 dev-games/aseprite:bundled-libs - Use the upstream provided bundled version of allegro 4.4.2
 dev-games/aseprite:gtk3 - Enable support for the experimental native GTK File Dialog
-dev-python/kombu:mongodb - Enables MongoDB backend
-dev-python/kombu:msgpack - Enables MessagePack (de)serializer for Python
-dev-python/kombu:redis - Enables Redis backend
-dev-python/kombu:sqs - Enables Amazon SQS transport module for Kombu
-dev-python/kombu:yaml - Enables yaml backend
-dev-python/py-amqp:extras - Install extra tools to generate initial Python mod from an AMQP XML file
 gui-libs/disman:kwayland - Compile support for KWayland (KWin)
 gui-libs/disman:wrapland - Compile support for Wrapland (KWinFT)
 kde-plasma/kwinft:multimedia - Enable effect video button in desktop effects KCM
 kde-plasma/kwinft:screencast - Enable screencast portal using media-video/pipewire
-mail-filter/opendkim:ldap - Enable openldap as a dataset facilitator or keys, determining domains to sign for, and any other dataset that opendkim supports.
-mail-filter/opendkim:lmdb - Add support for using dev-db/lmdb
-mail-filter/opendkim:lua - Enables control over signature verification, filtering and policy to be controlled by user defined lua scripts.
-mail-filter/opendkim:memcached - Add support for using dev-libs/libmemcached
-mail-filter/opendkim:opendbx - Use opendbx backend to facilitate dataset driven OpenDKIM configuration options like stats, bodylengthdb, etc. against a wide variety of database types
-mail-filter/opendkim:poll - Use poll() instead of select() for the provided asynchronous resolver library.
-mail-filter/opendkim:querycache - Add support for query caching (requires 'berkdb' flag)
-mail-filter/opendkim:sasl - Used to authenticate to a LDAP server in various ways if required.
-mail-filter/opendkim:stats - Add support for statistics (requires 'opendbx' flag)
-mail-filter/opendkim:unbound - Use the unbound dnssec library to perform DKIM DNS queries.
 net-im/ripcord-bin:system-libs - Use system libraries instead of bundled ones
-sci-electronics/ghdl:synth - Enable synthesis feature
-www-apps/srht-git:cron - use cronjob
-www-apps/srht-git:srht-builds - builds.sr.ht integration
-www-apps/srht-meta:billing - Enable billing support
 www-client/waterfox-bin:gmp-autoupdate - Allow Gecko Media Plugins (binary blobs) to be automatically downloaded and kept up-to-date in user profiles
 www-misc/pageres-cli:bundled-chromium - Use the bundled Chromium build that comes with puppeteer
-www-servers/jellyfin-bin:web - Install the web component of Jellyfin.
