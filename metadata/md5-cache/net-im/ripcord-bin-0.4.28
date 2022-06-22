@@ -10,5 +10,5 @@ RDEPEND=dev-libs/glib dev-libs/libbsd dev-libs/libpcre media-libs/libglvnd x11-l
 RESTRICT=strip
 SLOT=0
 SRC_URI=https://cancel.fm/dl/Ripcord-0.4.28-x86_64.AppImage
-_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28
+_eclasses_=desktop	22952d8f27cac191d75529d4c38e6bfa
 _md5_=c727e5537e5a8a5e0aa1bcdb2a45d459

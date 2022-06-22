@@ -9,5 +9,5 @@ RDEPEND=dev-util/jetbrains-common dev-java/jansi-native dev-libs/libdbusmenu
 RESTRICT=strip splitdebug mirror
 SLOT=0
 SRC_URI=https://download.jetbrains.com/webstorm/WebStorm-2020.3.2.tar.gz
-_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	jetbrains-ide	a22f8e5cd7fb4ca5e2718fe5ccdb6047
+_eclasses_=desktop	22952d8f27cac191d75529d4c38e6bfa	jetbrains-ide	a22f8e5cd7fb4ca5e2718fe5ccdb6047
 _md5_=fee080ce50b00dacaa751b866d58104a
