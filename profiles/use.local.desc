@@ -2,13 +2,3 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-app-backup/backup-scripts:cron - Install a daily cron script to back up the system.
-dev-games/aseprite:bundled-libs - Use the upstream provided bundled version of allegro 4.4.2
-dev-games/aseprite:gtk3 - Enable support for the experimental native GTK File Dialog
-gui-libs/disman:kwayland - Compile support for KWayland (KWin)
-gui-libs/disman:wrapland - Compile support for Wrapland (KWinFT)
-kde-plasma/kwinft:multimedia - Enable effect video button in desktop effects KCM
-kde-plasma/kwinft:screencast - Enable screencast portal using media-video/pipewire
-net-im/ripcord-bin:system-libs - Use system libraries instead of bundled ones
-www-client/waterfox-bin:gmp-autoupdate - Allow Gecko Media Plugins (binary blobs) to be automatically downloaded and kept up-to-date in user profiles
-www-misc/pageres-cli:bundled-chromium - Use the bundled Chromium build that comes with puppeteer

@@ -1,9 +1,0 @@
-DEFINED_PHASES=compile install
-DESCRIPTION=Fish-like autosuggestions for zsh
-EAPI=7
-HOMEPAGE=https://github.com/zsh-users/zsh-autosuggestions
-KEYWORDS=~amd64 ~x86
-LICENSE=MIT
-SLOT=0
-SRC_URI=https://github.com/zsh-users/zsh-autosuggestions/archive/v0.7.0.tar.gz -> zsh-autosuggestions-0.7.0.tar.gz
-_md5_=61d6af0d596886b267e914468e97d042
