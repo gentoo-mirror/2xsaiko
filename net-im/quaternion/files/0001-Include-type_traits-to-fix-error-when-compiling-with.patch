@@ -1,0 +1,25 @@
+From f6e297d2ad6db282e8be0603c2be926ffb86a921 Mon Sep 17 00:00:00 2001
+From: Marco Rebhan <me@dblsaiko.net>
+Date: Mon, 18 Nov 2024 19:20:51 +0100
+Subject: [PATCH] Include <type_traits> to fix error when compiling without PCH
+
+---
+ client/dialog.h | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/client/dialog.h b/client/dialog.h
+index 2970ca3..550fdce 100644
+--- a/client/dialog.h
++++ b/client/dialog.h
+@@ -6,6 +6,8 @@
+ 
+ #pragma once
+ 
++#include <type_traits>
++
+ #include <QtCore/QFlags>
+ #include <QtWidgets/QDialog>
+ #include <QtWidgets/QDialogButtonBox>
+-- 
+2.47.0
+
