@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst postrm preinst unpack
+DESCRIPTION=Remote streaming service client
+EAPI=8
+HOMEPAGE=https://parsec.app/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=unpacker xdg
+KEYWORDS=~amd64
+LICENSE=all-rights-reserved
+RDEPEND=dev-libs/openssl media-libs/alsa-lib media-libs/jpeg-compat:8 media-libs/libglvnd media-libs/libpng media-libs/libpulse media-libs/libva media-libs/vulkan-loader media-video/ffmpeg net-misc/curl virtual/libudev x11-libs/libX11 x11-libs/libXcursor x11-libs/libXfixes x11-libs/libXi x11-libs/libXrandr
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://web.archive.org/web/20240725203323/https://builds.parsec.app/package/parsec-linux.deb
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	unpacker	fb4b84181244b3b9990fa0bf40232dd2	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=78c8ed51fe1c717ca1e96c3672709323
