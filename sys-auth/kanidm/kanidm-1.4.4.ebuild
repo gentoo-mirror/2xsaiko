@@ -610,7 +610,7 @@ inherit cargo
 DESCRIPTION="A simple, secure and fast identity management platform"
 HOMEPAGE="https://github.com/kanidm/kanidm/"
 SRC_URI="
-	https://github.com/kanidm/kanidm/archive/refs/tags/v${PV}.tar.gz
+	https://github.com/kanidm/kanidm/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
 
@@ -618,7 +618,7 @@ LICENSE="MPL-2.0"
 # Dependent crate licenses
 LICENSE+="
 	0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD CC0-1.0 ISC
-	LGPL-3 MIT MPL-2.0 MPL-2.0 Unicode-DFS-2016 ZLIB
+	LGPL-3 MIT MIT-0 MPL-2.0 MPL-2.0 Unicode-DFS-2016 ZLIB
 "
 SLOT="0"
 KEYWORDS="~amd64"
