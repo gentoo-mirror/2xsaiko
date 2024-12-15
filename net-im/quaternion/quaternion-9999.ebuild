@@ -18,7 +18,7 @@ RDEPEND="
 	dev-qt/qtbase:6[widgets,network,gui]
 	dev-qt/qttools:6[linguist]
 	dev-qt/qtdeclarative:6[widgets]
-	>=net-libs/libquotient-0.9.0:=
+	net-libs/libquotient
 	dev-libs/qtkeychain:=[qt6]
 "
 DEPEND="
