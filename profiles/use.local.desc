@@ -2,3 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+app-crypt/heimdal:hdb-ldap - Adds support for LDAP as a database backend
+app-crypt/heimdal:lmdb - Add support for using dev-db/lmdb for lookup tables
+app-crypt/heimdal:otp - Adds support for one-time passwords
