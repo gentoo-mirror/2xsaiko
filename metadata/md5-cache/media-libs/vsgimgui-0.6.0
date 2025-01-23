@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=media-libs/vsg
+DESCRIPTION=Integration of VulkanSceneGraph with ImGui
+EAPI=8
+HOMEPAGE=https://github.com/vsg-dev/vsgImGui
+INHERIT=cmake
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=media-libs/vsg
+SLOT=0
+SRC_URI=https://github.com/vsg-dev/vsgImGui/archive/refs/tags/v0.6.0.tar.gz -> vsgimgui-0.6.0.tar.gz https://github.com/ocornut/imgui/archive/refs/tags/v1.91.6.tar.gz -> imgui-1.91.6.tar.gz https://github.com/epezent/implot/archive/f156599faefe316f7dd20fe6c783bf87c8bb6fd9.tar.gz -> implot-20240122.tar.gz
+_eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
+_md5_=ef7d96531474427dc51f07b173605e65
