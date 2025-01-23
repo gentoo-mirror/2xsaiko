@@ -1,7 +1,10 @@
 app-crypt/heimdal 9999: Kerberos 5 implementation from KTH
 app-shells/grmlzshrc 0.19.7: grml's zsh setup
+dev-libs/stringencoders 20180406: Fast c-string transformations
 dev-util/corrosion 0.5.0: Use Rust in CMake projects
 dev-util/ibtool 9999: Interface Builder utility
+media-libs/meshoptimizer 0.22: Mesh optimization library that makes meshes smaller and faster to render
+media-libs/s2geometry 0.11.1: Computational geometry and spatial indexing on the sphere
 media-libs/vsg 1.1.9: Vulkan & C++17 based Scene Graph Project
 media-libs/vsgimgui 0.6.0: Integration of VulkanSceneGraph with ImGui
 net-im/quaternion 9999: A Qt-based IM client for Matrix
