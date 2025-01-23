@@ -1,6 +1,7 @@
 app-crypt/heimdal 9999: Kerberos 5 implementation from KTH
 app-shells/grmlzshrc 0.19.7: grml's zsh setup
 dev-util/corrosion 0.5.0: Use Rust in CMake projects
+dev-util/ibtool 9999: Interface Builder utility
 net-im/quaternion 9999: A Qt-based IM client for Matrix
 net-misc/parsec-bin 150_p95: Remote streaming service client
 sys-apps/swapspace 1.18.1: A fork of Jeroen T. Vermeulen's excellent dynamic swap space manager
