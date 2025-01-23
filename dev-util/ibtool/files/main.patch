@@ -1,0 +1,25 @@
+diff -Naur a/ibtool/__main__.py b/ibtool/__main__.py
+--- a/ibtool/__main__.py	2025-01-23 01:24:09.327432791 +0100
++++ b/ibtool/__main__.py	2025-01-23 01:24:45.984555104 +0100
+@@ -3,11 +3,15 @@
+ from . import compare
+ import sys
+ 
+-if sys.argv[1] == "--compile":
+-    ibtool.main()
++def main():
++    if sys.argv[1] == "--compile":
++        ibtool.main()
+ 
+-elif sys.argv[1] == "--compare":
+-    compare.main(sys.argv[2], sys.argv[3])
++    elif sys.argv[1] == "--compare":
++        compare.main(sys.argv[2], sys.argv[3])
+ 
+-elif sys.argv[1] == "--dump":
+-    ibdump.ibdump(sys.argv[2])
++    elif sys.argv[1] == "--dump":
++        ibdump.ibdump(sys.argv[2])
++
++if __name__ == "__main__":
++    sys.exit(main())
