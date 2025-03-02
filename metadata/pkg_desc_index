@@ -7,5 +7,6 @@ media-libs/meshoptimizer 0.22: Mesh optimization library that makes meshes small
 media-libs/s2geometry 0.11.1: Computational geometry and spatial indexing on the sphere
 net-im/quaternion 9999: A Qt-based IM client for Matrix
 net-misc/parsec-bin 150_p95: Remote streaming service client
+net-p2p/litecoin-core 0.21.4: Reference implementation of the Litecoin cryptocurrency
 sys-apps/swapspace 1.18.1: A fork of Jeroen T. Vermeulen's excellent dynamic swap space manager
 sys-auth/kanidm 1.4.4: A simple, secure and fast identity management platform

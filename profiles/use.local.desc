@@ -5,3 +5,15 @@
 app-crypt/heimdal:hdb-ldap - Adds support for LDAP as a database backend
 app-crypt/heimdal:lmdb - Add support for using dev-db/lmdb for lookup tables
 app-crypt/heimdal:otp - Adds support for one-time passwords
+net-p2p/litecoin-core:berkdb - Support legacy wallets in Berkeley DB format
+net-p2p/litecoin-core:cli - Build and install bitcoin-cli command line interface
+net-p2p/litecoin-core:daemon - Build and install bitcoind daemon
+net-p2p/litecoin-core:external-signer - Include support for external wallet signer programs
+net-p2p/litecoin-core:gui - Build and install Bitcoin-Qt GUI
+net-p2p/litecoin-core:nat-pmp - Enable NAT-PMP port forwarding
+net-p2p/litecoin-core:qrcode - Enable generation of QR Codes for receiving payments
+net-p2p/litecoin-core:sqlite - Support descriptor wallets in SQLite format
+net-p2p/litecoin-core:systemtap - Enable SystemTap/DTrace tracing
+net-p2p/litecoin-core:test-full - Run tests that take a long time
+net-p2p/litecoin-core:upnp - Enable Universal Plug and Play
+net-p2p/litecoin-core:zeromq - Report blocks and transactions via zeromq
