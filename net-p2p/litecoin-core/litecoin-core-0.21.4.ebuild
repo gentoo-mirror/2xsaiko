@@ -82,8 +82,6 @@ DOCS=(
 )
 
 PATCHES=(
-	#"${FILESDIR}/28.0-syslibs.patch"
-	#"${FILESDIR}/26.0-init.patch"
 	"${FILESDIR}/boost.patch"
 )
 
