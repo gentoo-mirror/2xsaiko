@@ -10,5 +10,5 @@ RDEPEND=dev-libs/openssl media-libs/alsa-lib media-libs/jpeg-compat:8 media-libs
 RESTRICT=strip
 SLOT=0
 SRC_URI=https://web.archive.org/web/20240725203323/https://builds.parsec.app/package/parsec-linux.deb
-_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	unpacker	3b4ee72d1e2e0374fd8cd3eddfa00627	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	unpacker	3b4ee72d1e2e0374fd8cd3eddfa00627	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
 _md5_=78c8ed51fe1c717ca1e96c3672709323
