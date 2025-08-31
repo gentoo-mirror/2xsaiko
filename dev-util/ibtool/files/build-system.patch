@@ -1,0 +1,21 @@
+Commit ID: 2dce764560aae45331c43e10001000cc1dbaf825
+Change ID: lzmpmpvvvqyzozpolruryrutqwmoyktz
+Author   : Katalin Rebhan <me@dblsaiko.net> (31 Aug 2025 16:02:33)
+Committer: Katalin Rebhan <me@dblsaiko.net> (31 Aug 2025 16:04:49)
+
+    Add build-system table in pyproject.toml
+
+diff --git a/pyproject.toml b/pyproject.toml
+index 90dee869da..87f428cb39 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -14,5 +14,9 @@
+ [project.scripts]
+ ibtool = "ibtool.__main__:run"
+ 
++[build-system]
++requires = ["setuptools"]
++build-backend = "setuptools.build_meta"
++
+ [tool.setuptools]
+ packages = ["ibtool"]
