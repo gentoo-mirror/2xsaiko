@@ -7,7 +7,7 @@ inherit unpacker xdg
 
 DESCRIPTION="Remote streaming service client"
 HOMEPAGE="https://parsec.app/"
-SRC_URI="https://web.archive.org/web/20240725203323/https://builds.parsec.app/package/parsec-linux.deb"
+SRC_URI="https://web.archive.org/web/20250226223019/https://builds.parsec.app/package/parsec-linux.deb -> ${P}.deb"
 RESTRICT="strip"
 
 S="${WORKDIR}"
