@@ -19,7 +19,7 @@ RDEPEND="
 	dev-qt/qttools:6[linguist]
 	dev-qt/qtdeclarative:6[widgets]
 	net-libs/libquotient
-	dev-libs/qtkeychain:=[qt6]
+	dev-libs/qtkeychain:=
 "
 DEPEND="
 	${RDEPEND}
@@ -34,14 +34,6 @@ DOCS=( {README,SECURITY}.md )
 PATCHES=(
 	"${FILESDIR}/0001-Include-type_traits-to-fix-error-when-compiling-with.patch"
 )
-
-src_configure() {
-	local mycmakeargs=(
-		-DBUILD_WITH_QT6=On
-	)
-
-	cmake_src_configure
-}
 
 pkg_postinst() {
 	xdg_icon_cache_update
